@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>G10 MARKET</title>
+  <link rel="icon" type="image/x-icon" href="./assests/img/icon_main.png" />
+  <!--reset css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link rel="stylesheet" href="./assests/css/grid.css" />
+  <link rel="stylesheet" href="./assests/css/base.css" />
+  <link rel="stylesheet" href="./assests/css/main.css" />
+  <link rel="stylesheet" href="./assests/css/responsive.css" />
+  <link rel="stylesheet" href="./modal/modal.css" />
+  <link rel="stylesheet" href="./contact_page/contact.css" />
+  <link rel="stylesheet" href="./header/header.css">
+  <link rel="stylesheet" href="./footer/footer.css">
+  <link rel="stylesheet" href="./assests/responsive/modal_responsive.css">
+  <link rel="stylesheet" href="./assests/css/categoryProduct.css">
+  <link rel="stylesheet" href="./chatbox/chatbox.css">
+  <link rel="stylesheet" href="./assests/responsive/header_responsive.css">
+  <link rel="stylesheet" href="./assests/responsive/modal_responsive.css">
+  <link rel="stylesheet" href="./assests/responsive/index_responsive.css">
+  <link rel="stylesheet" href="./assests/responsive/categoryProduct_responsive.css">
+  <link rel="stylesheet" href="./assests/fonts/fontawesome-free-6.2.0-web/css/all.min.css" />
+  <!--Nhúng font-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400, 500, 700&display=swap&subset=vietnamese"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <header class="header" id="header">
+    <!-- được render từ file header.js  -->
+  </header>
+
+  <!-- category mobile -->
+  <div class="menu_mobile" id="menu_mobile">
+    <div class="menu_close">
+      <i class="menu_close-icon fa-solid fa-xmark" onclick="closeMenuMobile()"></i>
+    </div>
+
+    <div class="header__search-mobile">
+      <div class="header__search-input-wrap">
+        <input type="text" class="header__search-input" placeholder="Tìm kiếm trên G10 Market">
+      </div>
+
+      <button class="header__search-btn">
+        <i class="header__search-btn-icon fa-solid fa-magnifying-glass"></i>
+      </button>
+    </div>
+
+    <nav class="category_mobile">
+      <div class="category__heading">
+        <h3 class="category__heading-tittle">DANH MỤC</h3>
+      </div>
+      <ul class="category__list">
+        <li class="category__list-tittle">
+          <a href="./categoryProduct.html?raunhapkhau" class="category__list-tittle-link">Rau nhập khẩu</a>
+        </li>
+        <li class="category__list-tittle">
+          <a href="./categoryProduct.html?hoaquatuoi" class="category__list-tittle-link"> Hoa quả tươi </a>
+        </li>
+        <li class="category__list-tittle">
+          <a href="./categoryProduct.html?traicaynhapkhau" class="category__list-tittle-link"> Trái cây nhập
+            khẩu</a>
+        </li>
+        <li class="category__list-tittle">
+          <a href="./categoryProduct.html?namcacloai" class="category__list-tittle-link"> Nấm các loại</a>
+        </li>
+        <li class="category__list-tittle">
+          <a href="./categoryProduct.html?hoaquadalat" class="category__list-tittle-link"> Hoa quả Đà Lạt</a>
+        </li>
+        <li class="category__list-tittle">
+          <a href="./categoryProduct.html?rautuoisach" class="category__list-tittle-link"> Rau tươi sạch</a>
+        </li>
+        <li class="category__list-tittle">
+          <a href="./categoryProduct.html?cacloaicuqua" class="category__list-tittle-link"> Các loại củ quả</a>
+        </li>
+        <li class="category__list-tittle">
+          <a href="./categoryProduct.html?taocacloai" class="category__list-tittle-link"> Táo các loại </a>
+        </li>
+        <li class="category__list-tittle">
+          <a href="./categoryProduct.html?hoaquasaykho" class="category__list-tittle-link"> Hoa quả sấy khô</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="app_container">
+    <div class="grid wide">
+      <!-- category + slider  -->
+      <div class="row category-product_row">
+        <div class="col l-12 m-12 c-12 mobile_filter-wrap">
+          <p class="mobile_filter" onclick="toggleFilter()">
+            Bộ lọc
+            <i class="fa-solid fa-sliders"></i>
+          </p>
+        </div>
+
+        <div class="category_wrap col l-3 m-12 c-12" id="category_wrap">
+          <!-- Danh mục  -->
+          <nav class="category tier1">
+            <div class="category__heading">
+              <h3 class="category__heading-tittle">DANH MỤC</h3>
+            </div>
+            <ul class="category__list">
+              <li class="category__list-tittle">
+                <a href="./categoryProduct.html?raunhapkhau" class="category__list-tittle-link">Rau nhập khẩu</a>
+              </li>
+              <li class="category__list-tittle">
+                <a href="./categoryProduct.html?hoaquatuoi" class="category__list-tittle-link">
+                  Hoa quả tươi
+                </a>
+              </li>
+              <li class="category__list-tittle">
+                <a href="./categoryProduct.html?traicaynhapkhau" class="category__list-tittle-link">
+                  Trái cây nhập khẩu</a>
+              </li>
+              <li class="category__list-tittle">
+                <a href="./categoryProduct.html?namcacloai" class="category__list-tittle-link">
+                  Nấm các loại</a>
+              </li>
+              <li class="category__list-tittle">
+                <a href="./categoryProduct.html?hoaquadalat" class="category__list-tittle-link">
+                  Hoa quả Đà Lạt</a>
+              </li>
+              <li class="category__list-tittle">
+                <a href="./categoryProduct.html?rautuoisach" class="category__list-tittle-link">
+                  Rau tươi sạch</a>
+              </li>
+              <li class="category__list-tittle">
+                <a href="./categoryProduct.html?cacloaicuqua" class="category__list-tittle-link">
+                  Các loại củ quả</a>
+              </li>
+              <li class="category__list-tittle">
+                <a href="./categoryProduct.html?taocacloai" class="category__list-tittle-link">
+                  Táo các loại
+                </a>
+              </li>
+              <li class="category__list-tittle">
+                <a href="./categoryProduct.html?hoaquasaykho" class="category__list-tittle-link">
+                  Hoa quả sấy khô</a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Lọc theo màu sắc  -->
+          <nav class="category tier2">
+            <div class="category__heading">
+              <h3 class="category__heading-tittle">MÀU SẮC</h3>
+            </div>
+            <ul class="category__list list-color">
+              <li class="category__list-color">
+                <a href="./categoryProduct.html?redbox" class="category__list-tittle-link">
+                  <div class="category__list-box type-red"></div>
+                </a>
+              </li>
+              <li class="category__list-color">
+                <a href="./categoryProduct.html?greenbox" class="category__list-tittle-link">
+                  <div class="category__list-box type-green"></div>
+                </a>
+              </li>
+              <li class="category__list-color">
+                <a href="./categoryProduct.html?purplebox" class="category__list-tittle-link">
+                  <div class="category__list-box type-purple"></div>
+                </a>
+              </li>
+              <li class="category__list-color">
+                <a href="./categoryProduct.html?whitebox" class="category__list-tittle-link">
+                  <div class="category__list-box type-white"></div>
+                </a>
+              </li>
+              <li class="category__list-color">
+                <a href="./categoryProduct.html?yellowbox" class="category__list-tittle-link">
+                  <div class="category__list-box type-yellow"></div>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- lọc theo thương hiệu  -->
+          <nav class="category tier3">
+            <div class="category__heading">
+              <h3 class="category__heading-tittle">THƯƠNG HIỆU</h3>
+            </div>
+            <ul class="category__list">
+              <li class="category__list-tittle">
+                <a href="./categoryProduct.html?branddalat" class="category__list-tittle-link">
+                  <p class="category_brand" style="font-size: 1.6rem; margin: 0;cursor: pointer;">
+                    <!-- <i class="fa-solid fa-tag" style="font-size: 1.5rem;margin-right: 5px;"></i> -->
+                    Đà Lạt
+                  </p>
+                </a>
+              </li>
+              <li class="category__list-tittle" onclick="renderProductsByBrandUc()">
+                <a href="./categoryProduct.html?branduc" class="category__list-tittle-link">
+                  <p class="category_brand" style="font-size: 1.6rem; margin: 0;cursor: pointer;">
+                    <!-- <i class="fa-solid fa-tag" style="font-size: 1.5rem;margin-right: 5px;"></i> -->
+                    Úc
+                  </p>
+                </a>
+              </li>
+              <li class="category__list-tittle" onclick="renderProductsByBrandMy()">
+                <a href="./categoryProduct.html?brandmy" class="category__list-tittle-link">
+                  <p class="category_brand" style="font-size: 1.6rem; margin: 0;cursor: pointer;">
+                    <!-- <i class="fa-solid fa-tag" style="font-size: 1.5rem;margin-right: 5px;"></i> -->
+                    Mỹ
+                  </p>
+                </a>
+              </li>
+              <li class="category__list-tittle" onclick="renderProductsByBrandRica()">
+                <a href="./categoryProduct.html?brandrica" class="category__list-tittle-link">
+                  <p class="category_brand" style="font-size: 1.6rem; margin: 0;cursor: pointer;">
+                    <!-- <i class="fa-solid fa-tag" style="font-size: 1.5rem;margin-right: 5px;"></i> -->
+                    Rica
+                  </p>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="col l-9">
+          <!-- tiêu đề category (một vài thẻ dùng chung với phần contact)  -->
+          <div class="contact_nav category_nav">
+            <a href="./index.html" class="back_homepage-nav" style="font-size: 2.1rem">Trang chủ</a>
+            <h3 class="contact_seperate" style="font-size: 2.1rem">/</h3>
+            <a href="" class="category_page-nav"
+              style="font-size: 2.1rem;text-decoration: none;color: var(--primary-color);"></a>
+          </div>
+
+          <div class="row category-product">
+            <!-- được render từ js  -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ngăn cách content với footer -->
+  <div style="padding-bottom: 70px; background-color: #f5f5f5"></div>
+
+  <footer class="footer" id="footer">
+    <!-- được render từ file footer.js  -->
+  </footer>
+
+  <!-- modal  -->
+  <div id="modal_wrap">
+    <!-- render từ file modal.js  -->
+  </div>
+  <!-- chat message  -->
+  <div id="chat-box">
+    <!-- render từ file chatbox.js  -->
+  </div>
+
+  <!-- xử lý các chức năng category  -->
+  <script>
+    const b = document.querySelector.bind(document);
+    const bb = document.querySelectorAll.bind(document);
+
+    // lấy chuỗi tên ở cuối url của từng mục category
+    const url = window.location.href;
+    let obj = "";
+    for (let i = url.length - 1; url[i] != "?"; i--) {
+      obj = url[i] + obj;
+    }
+    console.log(obj);
+
+    // render sản phẩm theo từng danh mục, màu sắc, thương hiệu
+    const app = {
+      products: [
+        {
+          id: '1',
+          type: 'hoaquadalat',
+          name: 'Nho Đà Lạt xuất khẩu',
+          price: '200.000',
+          image: './assests/img/products/pd1.webp',
+          color: 'purple',
+          brand: 'Đà Lạt',
+        },
+        {
+          id: '2',
+          type: 'traicaynhapkhau',
+          name: 'Táo New ZeaLand',
+          price: '150.000',
+          image: './assests/img/products/pd2.webp',
+          color: '',
+          brand: 'New ZeaLand',
+        },
+        {
+          id: '3',
+          type: 'traicaynhapkhau',
+          name: 'Kiwi xanh',
+          price: '250.000',
+          image: './assests/img/products/pd3.webp',
+          color: 'green',
+          brand: 'Mỹ',
+        },
+        {
+          id: '4',
+          type: 'traicaynhapkhau',
+          name: 'Chanh dây đỏ Úc',
+          price: '400.000',
+          image: './assests/img/products/pd4.webp',
+          color: '',
+          brand: 'Úc',
+        },
+        {
+          id: '5',
+          type: 'hoaquadalat',
+          name: 'Dưa leo Đà Lạt',
+          price: '50.000',
+          image: './assests/img/products/pd5.webp',
+          color: 'green',
+          brand: 'Đà Lạt',
+        },
+        {
+          id: '6',
+          type: 'traicaynhapkhau',
+          name: 'Nho Pháp không hạt',
+          price: '300.000',
+          image: './assests/img/products/pd6.webp',
+          color: 'purple',
+          brand: 'Pháp',
+        },
+        {
+          id: '7',
+          type: 'hoaquadalat',
+          name: 'Ớt ngọt Đà Lạt',
+          price: '80.000',
+          image: './assests/img/products/pd7.webp',
+          color: '',
+          brand: 'Đà Lạt',
+        },
+        {
+          id: '8',
+          type: 'traicaynhapkhau',
+          name: 'Mận Đào Úc',
+          price: '180.000',
+          image: './assests/img/products/pd8.webp',
+          color: 'purple',
+          brand: 'Úc',
+        },
+        {
+          id: '9',
+          name: 'Ớt chuông đỏ',
+          price: '130.000',
+          image: './assests/img/products/pd9.jpg',
+          color: 'red',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '10',
+          name: 'Ớt chuông ngọt',
+          price: '160.000',
+          image: './assests/img/products/pd10.webp',
+          color: '',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '11',
+          type: 'hoaquatuoi',
+          name: 'Dâu tây',
+          price: '100.000',
+          image: './assests/img/products/pd11.webp',
+          color: 'red',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '12',
+          name: 'Ớt sừng',
+          price: '20.000',
+          image: './assests/img/products/pd12.webp',
+          color: 'red',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '13',
+          name: 'Ớt chuông vàng',
+          price: '50.000',
+          image: './assests/img/products/pd13.webp',
+          color: 'yellow',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '14',
+          type: 'cacloaicuqua',
+          name: 'Su su non',
+          price: '80.000',
+          image: './assests/img/products/pd14.jpg',
+          color: 'green',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '15',
+          type: 'hoaquatuoi',
+          name: 'Phúc bồn tử',
+          price: '120.000',
+          image: './assests/img/products/pd15.webp',
+          color: '',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '16',
+          type: 'cacloaicuqua',
+          name: 'Tỏi',
+          price: '30.000',
+          image: './assests/img/products/pd16.webp',
+          color: 'white',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '17',
+          type: 'traicaynhapkhau',
+          name: 'Cranberry',
+          price: '150.000',
+          image: './assests/img/products/pd17.webp',
+          color: '',
+          brand: 'Mỹ',
+        },
+        {
+          id: '18',
+          type: 'traicaynhapkhau',
+          name: 'Acaiberry grandy',
+          price: '2.500.000',
+          image: './assests/img/products/pd18.webp',
+          color: '',
+          brand: 'Mỹ',
+        },
+        {
+          id: '19',
+          type: 'namcacloai',
+          name: 'Nấm hương',
+          price: '70.000',
+          image: './assests/img/products/pd19.webp',
+          color: 'white',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '20',
+          type: 'cacloaicuqua',
+          name: 'Khoai môn',
+          price: '140.000',
+          image: './assests/img/products/pd20.webp',
+          color: '',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '21',
+          type: 'cacloaicuqua',
+          name: 'Khoai lang tím',
+          price: '145.000',
+          image: './assests/img/products/pd21.webp',
+          color: 'purple',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '22',
+          type: 'cacloaicuqua',
+          name: 'Hành củ',
+          price: '32.000',
+          image: './assests/img/products/pd22.webp',
+          color: '',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '23',
+          type: 'cacloaicuqua',
+          name: 'Khoai tây',
+          price: '75.000',
+          image: './assests/img/products/pd23.webp',
+          color: '',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '24',
+          type: 'hoaquatuoi',
+          name: 'Chuối xanh',
+          price: '45.000',
+          image: './assests/img/products/pd24.webp',
+          color: 'green',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '25',
+          type: 'raunhapkhau',
+          name: 'Cải xoăn',
+          price: '55.000',
+          image: './assests/img/products/pd25.jpg',
+          color: 'green',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '26',
+          type: 'hoaquatuoi',
+          name: 'Xoài cát Hòa Lộc',
+          price: '125.000',
+          image: './assests/img/products/pd25.webp',
+          color: 'yellow',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '27',
+          type: 'hoaquatuoi',
+          name: 'Táo xanh',
+          price: '60.000',
+          image: './assests/img/products/pd26.webp',
+          color: 'green',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '28',
+          type: 'cacloaicuqua',
+          name: 'Cà chua Beef',
+          price: '50.000',
+          image: './assests/img/products/pd27.webp',
+          color: 'red',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '29',
+          type: 'cacloaicuqua',
+          name: 'Hành tây',
+          price: '31.000',
+          image: './assests/img/products/pd28.webp',
+          color: '',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '30',
+          type: 'traicaynhapkhau',
+          name: 'Kiwi vàng',
+          price: '105.000',
+          image: './assests/img/products/pd29.webp',
+          color: 'yellow',
+          brand: 'Mỹ',
+        },
+        {
+          id: '31',
+          type: 'hoaquatuoi',
+          name: 'Đu đủ ruột đỏ',
+          price: '35.000',
+          image: './assests/img/products/pd30.webp',
+          color: '',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '32',
+          type: 'hoaquatuoi',
+          name: 'Quả mâm xôi đen',
+          price: '95.000',
+          image: './assests/img/products/pd31.webp',
+          color: '',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '33',
+          type: 'hoaquatuoi',
+          name: 'Quýt ngọt',
+          price: '32.000',
+          image: './assests/img/products/pd32.webp',
+          color: 'green',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '34',
+          type: 'raunhapkhau',
+          name: 'Xà lách ICEBERG',
+          price: '28.000',
+          image: './assests/img/products/pd33.webp',
+          color: 'green',
+          brand: 'Úc',
+        },
+        {
+          id: '35',
+          type: 'cacloaicuqua',
+          name: 'Khoai mỡ tím',
+          price: '34.000',
+          image: './assests/img/products/pd34.webp',
+          color: 'purple',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '36',
+          type: 'namcacloai',
+          name: "Nấm đùi gà Rica",
+          price: "45.000",
+          image: "./assests/img/nam_cac_loai/npd1.webp",
+          color: 'white',
+          brand: 'Rica',
+        },
+        {
+          id: '37',
+          type: 'namcacloai',
+          name: "Nấm mối đen Rica",
+          price: "85.000",
+          image: "./assests/img/nam_cac_loai/npd2.webp",
+          color: 'white',
+          brand: 'Rica',
+        },
+        {
+          id: '38',
+          type: 'namcacloai',
+          name: "Nấm kim châm Rica",
+          price: "19.000",
+          image: "./assests/img/nam_cac_loai/npd3.webp",
+          color: 'white',
+          brand: 'Rica',
+        },
+        {
+          id: '39',
+          type: 'namcacloai',
+          name: "Nấm hoàng kim Rica",
+          price: "37.000",
+          image: "./assests/img/nam_cac_loai/npd4.webp",
+          color: 'yellow',
+          brand: 'Rica',
+        },
+        {
+          id: '40',
+          type: 'namcacloai',
+          name: "Nấm hương Phú Gia",
+          price: "109.000",
+          image: "./assests/img/nam_cac_loai/npd5.webp",
+          color: '',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '41',
+          type: 'namcacloai',
+          name: "Nấm bào ngư xám Rica",
+          price: "26.000",
+          image: "./assests/img/nam_cac_loai/npd6.webp",
+          color: 'white',
+          brand: 'Rica',
+        },
+        {
+          id: '42',
+          type: 'namcacloai',
+          name: "Nấm Porcini",
+          price: "250.000",
+          image: "./assests/img/nam_cac_loai/npd7.webp",
+          color: '',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '43',
+          type: 'namcacloai',
+          name: "Nấm Ngọc châm nâu",
+          price: "150.000",
+          image: "./assests/img/nam_cac_loai/npd8.webp",
+          color: 'white',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '44',
+          type: 'rautuoisach',
+          name: "Cần tây",
+          price: "38.000",
+          image: "./assests/img/rau/pd1.webp",
+          color: 'green',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '45',
+          type: 'rautuoisach',
+          name: "Cải ngọt hữu cơ",
+          price: "27.000",
+          image: "./assests/img/rau/pd2.webp",
+          color: 'green',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '46',
+          type: 'taocacloai',
+          name: 'Táo Breeze',
+          price: '89.000',
+          image: './assests/img/products/pd35.webp',
+          color: 'red',
+          brand: 'Mỹ',
+        },
+        {
+          id: '47',
+          type: 'taocacloai',
+          name: 'Táo Envy',
+          price: '99.000',
+          image: './assests/img/products/pd36.webp',
+          color: 'red',
+          brand: 'Mỹ',
+        },
+        {
+          id: '48',
+          type: 'hoaquasaykho',
+          name: 'Việt quất sấy khô',
+          price: '98.000',
+          image: './assests/img/hoaquasaykho/pd1.webp',
+          color: '',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '49',
+          type: 'hoaquasaykho',
+          name: 'Xoài sấy khô',
+          price: '65.000',
+          image: './assests/img/hoaquasaykho/pd2.webp',
+          color: 'yellow',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '50',
+          type: 'hoaquasaykho',
+          name: 'Cherry sấy khô',
+          price: '184.000',
+          image: './assests/img/products/pd37.webp',
+          color: 'red',
+          brand: 'Mỹ',
+        },
+      ],
+
+      //render sản phẩm
+      render: function () {
+        const htmls = this.products.map((product, index) => {
+          // render theo category
+          if (obj === "raunhapkhau" && product.type === "raunhapkhau" || obj === "hoaquatuoi" && product.type === "hoaquatuoi" ||
+            obj === "traicaynhapkhau" && product.type === "traicaynhapkhau" || obj === "namcacloai" && product.type === "namcacloai" ||
+            obj === "hoaquadalat" && product.type === "hoaquadalat" || obj === "rautuoisach" && product.type === "rautuoisach" ||
+            obj === "cacloaicuqua" && product.type === "cacloaicuqua" || obj === "taocacloai" && product.type === "taocacloai" ||
+            obj === "hoaquasaykho" && product.type === "hoaquasaykho") {
+            return `
+                            <div class="col l-3 m-4 c-6">
+                              <a href="./productInformation.html?${product.id}" class="home__product-item">
+                                <img src="${product.image}" alt='' class="home__product-item-img">
+                                <h3 class="home__product-item-tittle">${product.name}</h3>
+                                <h4 class="home__product-item-price">${product.price} ₫</h4>
+                                <div class="home__product-item-btn-wrap">
+                                    <button class="home__product-item-btn btn btn--primary ">Xem chi tiết</button>
+                                </div>
+                            </a>
+                            </div>
+                        `;
+          }
+          // render theo màu sắc
+          if (obj === "redbox" && product.color === "red" || obj === "greenbox" && product.color === "green" ||
+            obj === "purplebox" && product.color === "purple" || obj === "whitebox" && product.color === "white" ||
+            obj === "yellowbox" && product.color === "yellow") {
+            return `
+                            <div class="col l-3 m-4 c-6">
+                              <a href="./productInformation.html?${product.id}" class="home__product-item">
+                                <img src="${product.image}" alt='' class="home__product-item-img">
+                                <h3 class="home__product-item-tittle">${product.name}</h3>
+                                <h4 class="home__product-item-price">${product.price} ₫</h4>
+                                <div class="home__product-item-btn-wrap">
+                                    <button class="home__product-item-btn btn btn--primary ">Xem chi tiết</button>
+                                </div>
+                            </a>
+                            </div>
+                        `;
+          }
+          // render theo brand
+          if (obj === "branddalat" && product.brand === "Đà Lạt" || obj === "branduc" && product.brand === "Úc" ||
+            obj === "brandmy" && product.brand === "Mỹ" || obj === "brandrica" && product.brand === "Rica") {
+            return `
+                            <div class="col l-3 m-4 c-6">
+                              <a href="./productInformation.html?${product.id}" class="home__product-item">
+                                <img src="${product.image}" alt='' class="home__product-item-img">
+                                <h3 class="home__product-item-tittle">${product.name}</h3>
+                                <h4 class="home__product-item-price">${product.price} ₫</h4>
+                                <div class="home__product-item-btn-wrap">
+                                    <button class="home__product-item-btn btn btn--primary ">Xem chi tiết</button>
+                                </div>
+                            </a>
+                            </div>
+                        `;
+          }
+        });
+        b(".category-product").innerHTML = htmls.join("");
+      },
+
+      start: function () {
+        this.render();
+      },
+    };
+    app.start();
+
+
+    // render tên category
+    if (obj === "raunhapkhau") {
+      b(".category_page-nav").innerHTML = "Rau nhập khẩu";
+    }
+    else if (obj === "hoaquatuoi") {
+      b(".category_page-nav").innerHTML = "Hoa quả tươi";
+    }
+    else if (obj === "traicaynhapkhau") {
+      b(".category_page-nav").innerHTML = "Trái cây nhập khẩu";
+    }
+    else if (obj === "namcacloai") {
+      b(".category_page-nav").innerHTML = "Nấm các loại";
+    }
+    else if (obj === "hoaquadalat") {
+      b(".category_page-nav").innerHTML = "Hoa quả Đà Lạt";
+    }
+    else if (obj === "rautuoisach") {
+      b(".category_page-nav").innerHTML = "Rau tươi sạch";
+    }
+    else if (obj === "cacloaicuqua") {
+      b(".category_page-nav").innerHTML = "Các loại củ quả";
+    }
+    else if (obj === "taocacloai") {
+      b(".category_page-nav").innerHTML = "Táo các loại";
+    }
+    else if (obj === "hoaquasaykho") {
+      b(".category_page-nav").innerHTML = "Hoa quả sấy khô";
+    }
+    else {
+      b(".category_page-nav").innerHTML = "Sản phẩm";
+    }
+
+  </script>
+  <!-- render header -->
+  <script src="./header/header.js"></script>
+  <!-- render toast message  -->
+  <script src="./toast_messages/toast.js"></script>
+  <!-- render modal  -->
+  <script src="./modal/modal.js"></script>
+  <!-- Xử lý sự kiện click đăng ký/ Đăng nhập  -->
+  <script src="./javascript/logIn_and_Signup.js"></script>
+  <!-- import validator đăng ký, đăng nhập  -->
+  <script src="./javascript/validator.js"></script>
+  <!-- xử lý các rule, sự kiện đăng ký, đăng nhập, check đăng ký, đăng nhập thành công-->
+  <script>
+    const headerNavbarListTwo = document.querySelector('.header__navbar-list-two');
+    const headerMenu = document.querySelector('.header_menu');
+    var emailReg;
+    var passwordReg;
+    var emailLog;
+    var passwordLog;
+    // Đăng ký 
+    Validator({
+      form: "#form-1",
+      formGroupSelector: ".form-group",
+      errorSelector: ".form-message",
+      rules: [
+        // Validator.isRequired('#fullname'),
+        Validator.isRequired("#email"),
+        Validator.isEmail("#email"),
+        Validator.minLength("#password", 6),
+        Validator.isRequired("#password_confirmation"),
+        Validator.isConfirmed(
+          "#password_confirmation",
+          function () {
+            return document.querySelector("#form-1 #password").value;
+          },
+          "Mật khẩu nhập lại không khớp"
+        ),
+      ],
+      onSubmit: function (data) {
+        //Call api
+        console.log(data);
+        emailReg = data.email;
+        passwordReg = data.password;
+
+        showSuccessSignUpToast();
+        logModal.classList.add('open');
+        regModal.classList.remove('open');
+      },
+    });
+    //Đăng nhập
+    Validator({
+      form: "#form-2",
+      formGroupSelector: ".form-group",
+      errorSelector: ".form-message",
+      rules: [
+        Validator.isRequired("#email"),
+        Validator.isEmail("#email"),
+        Validator.minLength("#password", 6),
+      ],
+      onSubmit: function (data) {
+        //Call api
+        console.log(data);
+        emailLog = data.email;
+        passwordLog = data.password;
+
+        if (emailReg === emailLog && passwordReg === passwordLog) {
+          showSuccessLogInToast();
+          logModal.classList.remove('open');
+          location.replace('/login_index.html');
+        }
+        else {
+          showErrorLogInToast();
+        }
+      },
+    });
+  </script>
+  <!-- xử lý trượt slider  -->
+  <script src="./javascript/slider.js"></script>
+  <!-- Time sale countDown -->
+  <script src="./javascript/countDownTime.js"></script>
+  <!-- object product 1  -->
+  <script src="./javascript/mainProduct.js"></script>
+  <!-- Đóng mở chat hỗ trợ trực tuyến -->
+  <script>
+    function openChat() {
+      document.getElementById("myChat").style.display = "block";
+    }
+    function closeChat() {
+      document.getElementById("myChat").style.display = "none";
+    }
+  </script>
+  <!-- Đóng mở menu mobile -->
+  <script>
+    function openMenuMobile() {
+      document.getElementById("menu_mobile").style.display = "block";
+    }
+    function closeMenuMobile() {
+      document.getElementById("menu_mobile").style.display = "none";
+    }
+  </script>
+  <!-- render chatbox  -->
+  <script src="./chatbox/chatbox.js"></script>
+  <!-- render footer -->
+  <script src="./footer/footer.js"></script>
+  <!-- xử lý click đóng mở bộ lọc  -->
+  <script>
+    function toggleFilter() {
+      document.getElementById('category_wrap').classList.toggle("show");
+    }
+  </script>
+</body>
+
+</html>

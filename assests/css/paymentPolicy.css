@@ -1,0 +1,19 @@
+.back_homepage-nav.paymentPolicy_nav {
+    font-size: 2.3rem; 
+    margin: 0 0 26px -24px;
+}
+
+.payment_title {
+    font-size: 2.7rem;
+}
+
+.payment_title1 {
+    font-size: 1.5rem;
+    padding-top: 6px;
+}
+
+.payment_content {
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+    text-align: justify;
+}

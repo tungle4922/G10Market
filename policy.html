@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>G10 MARKET</title>
+    <link rel="icon" type="image/x-icon" href="./assests/img/icon_main.png" />
+    <!--reset css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link rel="stylesheet" href="./assests/css/grid.css" />
+    <link rel="stylesheet" href="./assests/css/base.css" />
+    <link rel="stylesheet" href="./assests/css/main.css" />
+    <link rel="stylesheet" href="./assests/css/responsive.css" />
+    <link rel="stylesheet" href="./modal/modal.css" />
+    <link rel="stylesheet" href="./header/header.css">
+    <link rel="stylesheet" href="./footer/footer.css">
+    <link rel="stylesheet" href="./chatbox/chatbox.css">
+    <link rel="stylesheet" href="./toast_messages/toast.css">
+    <link rel="stylesheet" href="./contact_page/contact.css">
+    <link rel="stylesheet" href="./assests/css/policy.css">
+    <link rel="stylesheet" href="./assests/responsive/header_responsive.css">
+    <link rel="stylesheet" href="./assests/responsive/modal_responsive.css">
+    <link rel="stylesheet" href="./assests/responsive/index_responsive.css">
+    <link rel="stylesheet" href="./assests/responsive/policy_responsive.css">
+    <link rel="stylesheet" href="./assests/fonts/fontawesome-free-6.2.0-web/css/all.min.css" />
+    <!--Nhúng font-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400, 500, 700&display=swap&subset=vietnamese"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <div class="app">
+        <header class="header" id="header">
+            <!-- được render từ file header.js  -->
+        </header>
+
+        <!-- category mobile -->
+        <div class="menu_mobile" id="menu_mobile">
+            <div class="menu_close">
+                <i class="menu_close-icon fa-solid fa-xmark" onclick="closeMenuMobile()"></i>
+            </div>
+
+            <div class="header__search-mobile">
+                <div class="header__search-input-wrap">
+                    <input type="text" class="header__search-input" placeholder="Tìm kiếm trên G10 Market">
+                </div>
+
+                <button class="header__search-btn">
+                    <i class="header__search-btn-icon fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+
+            <nav class="category_mobile">
+                <div class="category__heading">
+                    <h3 class="category__heading-tittle">DANH MỤC</h3>
+                </div>
+                <ul class="category__list">
+                    <li class="category__list-tittle">
+                        <a href="./categoryProduct.html?raunhapkhau" class="category__list-tittle-link">Rau nhập
+                            khẩu</a>
+                    </li>
+                    <li class="category__list-tittle">
+                        <a href="./categoryProduct.html?hoaquatuoi" class="category__list-tittle-link"> Hoa quả tươi
+                        </a>
+                    </li>
+                    <li class="category__list-tittle">
+                        <a href="./categoryProduct.html?traicaynhapkhau" class="category__list-tittle-link"> Trái cây
+                            nhập
+                            khẩu</a>
+                    </li>
+                    <li class="category__list-tittle">
+                        <a href="./categoryProduct.html?namcacloai" class="category__list-tittle-link"> Nấm các loại</a>
+                    </li>
+                    <li class="category__list-tittle">
+                        <a href="./categoryProduct.html?hoaquadalat" class="category__list-tittle-link"> Hoa quả Đà
+                            Lạt</a>
+                    </li>
+                    <li class="category__list-tittle">
+                        <a href="./categoryProduct.html?rautuoisach" class="category__list-tittle-link"> Rau tươi
+                            sạch</a>
+                    </li>
+                    <li class="category__list-tittle">
+                        <a href="./categoryProduct.html?cacloaicuqua" class="category__list-tittle-link"> Các loại củ
+                            quả</a>
+                    </li>
+                    <li class="category__list-tittle">
+                        <a href="./categoryProduct.html?taocacloai" class="category__list-tittle-link"> Táo các loại
+                        </a>
+                    </li>
+                    <li class="category__list-tittle">
+                        <a href="./categoryProduct.html?hoaquasaykho" class="category__list-tittle-link"> Hoa quả sấy
+                            khô</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="app_container" style="background-color: #fff;">
+            <!-- Ngăn cách với header  -->
+            <div style="padding-top: 15px; background-color: #fff"></div>
+            <div class="grid wide">
+                <div class="col l-12">
+                    <div class="contact_nav">
+                        <a href="./index.html" class="back_homepage-nav policy_nav">Trang chủ</a>
+                        <h3 class="contact_seperate" style="font-size: 2.3rem; margin: 0 8px 26px 8px;">/</h3>
+                        <a href="" class="contact_page-nav" style="font-size: 2.3rem; margin: 0 0 26px 0;">Chính sách
+                            bảo mật</a>
+                    </div>
+                </div>
+
+                <div class="row policy_row">
+                    <div class="col l-4 m-12 c-12">
+                        <!-- Mua sắm cùng G10 Market -->
+                        <div class="policy_wrap">
+                            <h4 class="policy_list-title" onclick="togglePolicy()">Mua sắm cùng G10 Market</h4>
+                            <div class="policy_down" id="policy_down">
+                                <i class="policy_icon fa-solid fa-chevron-down"></i>
+                            </div>
+                            <div class="policy_up" id="policy_up">
+                                <i class="policy_icon fa-solid fa-chevron-up"></i>
+                            </div>
+                        </div>
+                        <ul class="policy_list" id="policy_list">
+                            <li class="policy_item">Người dùng mới</li>
+                            <li class="policy_item">Thao tác</li>
+                            <li class="policy_item">Khám phá</li>
+                            <li class="policy_item">Thanh toán đơn hàng</li>
+                        </ul>
+                        <!-- Khuyến Mãi & Ưu Đãi -->
+                        <div class="policy_wrap">
+                            <h4 class="policy_list-title" onclick="togglePolicy1()">Khuyến Mãi & Ưu Đãi</h4>
+                            <div class="policy_down" id="policy_down1">
+                                <i class="policy_icon fa-solid fa-chevron-down"></i>
+                            </div>
+                            <div class="policy_up" id="policy_up1">
+                                <i class="policy_icon fa-solid fa-chevron-up"></i>
+                            </div>
+                        </div>
+                        <ul class="policy_list" id="policy_list1">
+                            <li class="policy_item">Chương trình khuyến mãi</li>
+                            <li class="policy_item">Chương trình cho người dùng</li>
+                        </ul>
+                        <!-- Đơn Hàng & Vận Chuyển -->
+                        <div class="policy_wrap">
+                            <h4 class="policy_list-title" onclick="togglePolicy2()">Đơn Hàng & Vận Chuyển</h4>
+                            <div class="policy_down" id="policy_down2">
+                                <i class="policy_icon fa-solid fa-chevron-down"></i>
+                            </div>
+                            <div class="policy_up" id="policy_up2">
+                                <i class="policy_icon fa-solid fa-chevron-up"></i>
+                            </div>
+                        </div>
+                        <ul class="policy_list" id="policy_list2">
+                            <li class="policy_item">Đơn hàng</li>
+                            <li class="policy_item">Đánh giá & Bình luận</li>
+                            <li class="policy_item">Thông tin vận chuyển khác</li>
+                            <li class="policy_item">Phương thức vận chuyển</li>
+                        </ul>
+                        <!-- Trả Hàng & Hoàn Tiền -->
+                        <div class="policy_wrap">
+                            <h4 class="policy_list-title" onclick="togglePolicy3()">Trả Hàng & Hoàn Tiền</h4>
+                            <div class="policy_down" id="policy_down3">
+                                <i class="policy_icon fa-solid fa-chevron-down"></i>
+                            </div>
+                            <div class="policy_up" id="policy_up3">
+                                <i class="policy_icon fa-solid fa-chevron-up"></i>
+                            </div>
+                        </div>
+                        <ul class="policy_list" id="policy_list3">
+                            <li class="policy_item">Gửi yêu cầu</li>
+                            <li class="policy_item">Xử lý yêu cầu</li>
+                            <li class="policy_item">Khiếu nại</li>
+                        </ul>
+                    </div>
+
+                    <div class="col l-7 m-12 c-12">
+                        <h1 class="policy_content-title1">Chính sách bảo mật</h1>
+                        <h3 class="policy_content-title2">1.GIỚI THIỆU</h3>
+                        <p class="policy_content">
+                            1.1. Chào mừng bạn đến với nền tảng G10 market.vn (bao gồm website và ứng dụng di động G10
+                            market) được được vận hành bởi Công ty TNHH G10 market và các công ty liên kết (gọi riêng và
+                            gọi chung là, "G10 market", "chúng tôi", hay "của chúng tôi"). G10 market nghiêm túc thực
+                            hiện trách nhiệm của mình liên quan đến bảo mật thông tin theo các quy định về bảo vệ bí mật
+                            thông tin cá nhân của pháp luật Việt Nam (“Luật riêng tư”) và cam kết tôn trọng quyền riêng
+                            tư và sự quan tâm của tất cả người dùng đối với website và ứng dụng di động của chúng tôi
+                            (“Nền tảng”) (chúng tôi gọi chung Các Nền tảng và các dịch vụ chúng tôi cung cấp như được mô
+                            tả trong Nền tảng của chúng tôi là "các Dịch Vụ"). Người dùng có nghĩa là người đăng ký tài
+                            khoản với chúng tôi để sử dụng các Dịch Vụ, bao gồm cả người mua và người bán (gọi chung và
+                            gọi riêng là “Các Người Dùng”, “bạn” hoặc “của bạn”). Chúng tôi nhận biết tầm quan trọng của
+                            dữ liệu cá nhân mà bạn đã tin tưởng giao cho chúng tôi và tin rằng chúng tôi có trách nhiệm
+                            quản lý, bảo vệ và xử lý dữ liệu cá nhân của bạn một cách thích hợp. Chính sách bảo mật này
+                            ("Chính sách bảo mật" hay "Chính sách") được thiết kế để giúp bạn hiểu được cách thức chúng
+                            tôi thu thập, sử dụng, tiết lộ và/hoặc xử lý dữ liệu cá nhân mà bạn đã cung cấp cho chúng
+                            tôi và/hoặc lưu giữ về bạn, cho dù là hiện nay hoặc trong tương lai, cũng như để giúp bạn
+                            đưa ra quyết định sáng suốt trước khi cung cấp cho chúng tôi bất kỳ dữ liệu cá nhân nào của
+                            bạn. <br> <br>
+                            1.2 "Dữ Liệu Cá Nhân" hay "dữ liệu cá nhân" có nghĩa là dữ liệu, dù đúng hay không, về một
+                            cá nhân mà thông qua đó có thể được xác định được danh tính, hoặc từ dữ liệu đó và thông tin
+                            khác mà một tổ chức có hoặc có khả năng tiếp cận. Các ví dụ thường gặp về dữ liệu cá nhân có
+                            thể gồm có tên, số chứng minh nhân dân và thông tin liên hệ. <br> <br>
+                            1.3 Bằng việc sử dụng Các Dịch Vụ, đăng ký một tài khoản với chúng tôi hoặc truy cập Nền
+                            tảng, bạn xác nhận và đồng ý rằng bạn chấp nhận các phương pháp, yêu cầu, và/hoặc chính sách
+                            được mô tả trong Chính sách bảo mật này, và theo đây bạn đồng ý cho phép chúng tôi thu thập,
+                            sử dụng, tiết lộ và/hoặc xử lý dữ liệu cá nhân của bạn như mô tả trong đây. NẾU BẠN KHÔNG
+                            ĐỒNG Ý CHO PHÉP XỬ LÝ DỮ LIỆU CÁ NHÂN CỦA BẠN NHƯ MÔ TẢ TRONG CHÍNH SÁCH NÀY, VUI LÒNG KHÔNG
+                            SỬ DỤNG CÁC DỊCH VỤ CỦA CHÚNG TÔI HAY TRUY CẬP NỀN TẢNG HOẶC TRANG WEB CỦA CHÚNG TÔI. Nếu
+                            chúng tôi thay đổi Chính sách bảo mật của mình, chúng tôi sẽ thông báo cho bạn bao gồm cả
+                            thông qua việc đăng tải những thay đổi đó hoặc Chính sách bảo mật sửa đổi trên Nền tảng của
+                            chúng tôi. Trong phạm vi pháp luật cho phép, việc tiếp tục sử dụng các Dịch Vụ hoặc Nền
+                            Tảng, bao gồm giao dịch của bạn, được xem là bạn đã công nhận và đồng ý với các thay đổi
+                            trong Chính Sách Bảo Mật này. <br> <br>
+                            1.4. Chính sách này áp dụng cùng với các thông báo, điều khoản hợp đồng, điều khoản chấp
+                            thuận khác áp dụng liên quan đến việc chúng tôi thu thập, lưu trữ, sử dụng, tiết lộ và/hoặc
+                            xử lý dữ liệu cá nhân của bạn và không nhằm ghi đè những thông báo hoặc các điều khoản đó
+                            trừ khi chúng tôi có tuyên bố ràng khác. <br> <br>
+                            1.5. Chính sách này được áp dụng cho cả Người bán và Người mua đang sử dụng Dịch vụ trừ khi
+                            có tuyên bố rõ ràng ngược lại. <br>
+                        </p>
+
+                        <h3 class="policy_content-title2">2. KHI NÀO G10 MARKET SẼ THU THẬP DỮ LIỆU CÁ NHÂN?</h3>
+                        <p class="policy_content">
+                            2.1. Chúng tôi sẽ/có thể thu thập dữ liệu cá nhân về bạn: <br>
+                            1. khi bạn đăng ký và/hoặc sử dụng Các Dịch Vụ hoặc Nền tảng của chúng tôi, hoặc mở một tài
+                            khoản với chúng tôi; <br>
+                            2. khi bạn gửi bất kỳ biểu mẫu nào, bao gồm đơn đăng ký hoặc các mẫu đơn khác liên quan đến
+                            bất kỳ sản phẩm và dịch vụ nào của chúng tôi, bằng hình thức trực tuyến hay dưới hình thức
+                            khác; <br>
+                            3. khi bạn ký kết bất kỳ thỏa thuận nào hoặc cung cấp các tài liệu hoặc thông tin khác liên
+                            quan đến tương tác giữa bạn với chúng tôi, hoặc khi bạn sử dụng các sản phẩm và dịch vụ của
+                            chúng tôi; <br>
+                            4. khi bạn tương tác với chúng tôi, chẳng hạn như thông qua các cuộc gọi điện thoại (có thể
+                            được ghi âm lại), thư từ, fax, gặp gỡ trực tiếp, các nền ứng dụng truyền thông xã hội và
+                            email; <br>
+                            5. khi bạn sử dụng các dịch vụ điện tử của chúng tôi, hoặc tương tác với chúng tôi qua Nền
+                            tảng hoặc Trang Web hoặc Các Dịch Vụ của chúng tôi. Trường hợp này bao gồm thông qua tập tin
+                            cookie mà chúng tôi có thể triển khai khi bạn tương tác với các Nền tảng hoặc Trang Web của
+                            chúng tôi; <br>
+                            6. khi bạn cấp quyền trên thiết bị của bạn để chia sẻ thông tin với ứng dụng hoặc Nền tảng
+                            của chúng tôi <br>
+                            7. Khi bạn liên kết tài khoản G10 market với tài khoản mạng xã hội của bạn hoặc các tài
+                            khoản bên ngoài khác hoặc sử dụng các tính năng mạng xã hội khác, phù hợp với các chính sách
+                            của nhà cung cấp <br>
+                            8. khi bạn thực hiện các giao dịch thông qua Dịch vụ của chúng tôi; <br>
+                            9. khi bạn cung cấp ý kiến phản hồi hoặc gửi khiếu nại cho chúng tôi; <br>
+                            10. khi bạn đăng ký tham gia một cuộc thi; <br>
+                            11. khi bạn gửi dữ liệu cá nhân của bạn cho chúng tôi vì bất kỳ lý do gì. <br> <br>
+                            Các trường hợp trên không nhằm mục đích liệt kê đầy đủ các trường hợp và chỉ đưa ra một số
+                            trường hợp phổ biến về thời điểm dữ liệu cá nhân của bạn có thể bị thu thập <br>
+                        </p>
+
+                        <h3 class="policy_content-title2">3. THU THẬP CÁC DỮ LIỆU KHÁC</h3>
+                        <p class="policy_content">
+                            3.1 Như với hầu hết các trang web và các ứng dụng di động khác, thiết bị của bạn gửi thông
+                            tin có thể gồm có dữ liệu về bạn, được một máy chủ web ghi lại khi bạn sử dụng Nền tảng của
+                            chúng tôi. Thông tin này thông thường bao gồm nhưng không giới hạn địa chỉ IP, hệ điều hành
+                            của máy tính/thiết bị di động, loại trình duyệt, loại thiết bị di động, các đặc điểm của
+                            thiết bị di động, mã định danh thiết bị thống nhất (UDID) hoặc mã định danh thiết bị di động
+                            (MEID) của thiết bị di động của bạn, địa chỉ tham chiếu của Trang Web (nếu có), các trang mà
+                            bạn đã truy cập đến trên trang web hoặc ứng dụng di động của chúng tôi và thời gian truy cập
+                            và đôi khi là "cookie" (có thể vô hiệu hóa bằng cách sử dụng tùy chọn trình duyệt của bạn)
+                            để giúp trang web ghi nhớ lần truy cập cuối cùng của bạn. Nếu bạn đăng nhập, thông tin này
+                            được liên kết với tài khoản cá nhân của bạn. Thông tin này cũng được đưa vào các số liệu
+                            thống kê ẩn danh để giúp chúng tôi hiểu được khách truy cập sử dụng Trang Web của chúng tôi
+                            như thế nào. <br>
+                            3.2 Các ứng dụng di động của chúng tôi có thể thu thập thông tin chính xác về địa chỉ của
+                            thiết bị di động của bạn sử dụng các công nghệ như GPS, Wi-Fi,…. Chúng tôi thu thập, sử
+                            dụng, công bố và/hoặc xử lý các thông tin này cho một hoặc nhiều mục đích bao gồm nhưng
+                            không giới hạn các dịch vụ được cung cấp dựa trên vị trí mà bạn yêu cầu hoặc chuyển các nội
+                            dung có liên quan đến bạn dựa trên vị trí của bạn hoặc cho phép bạn chia sẻ vị trí của bạn
+                            cho các Người sử dụng khác như là một phần của các Dịch vụ được cung cấp bởi các ứng dụng di
+                            động của chúng tôi. Đối với phần lớn các thiết bị di động, bạn có thể rút lại sự cho phép để
+                            chúng tôi được thu thập các thông tin này dựa trên vị trí của bạn thông qua các cài đặt trên
+                            thiết bị. Nếu bạn có câu hỏi nào về cách thức vô hiệu hóa các dịch vụ vị trí trên thiết bị
+                            di động của bạn, vui lòng liên hệ với các nhà cung cấp dịch vụ thiết bị di động hoặc nhà sản
+                            xuất thiết bị của bạn. <br>
+                            3.3 Như khi bạn xem các trang trên trang web hoặc ứng dụng di động của chúng tôi, khi bạn
+                            xem các nội dung và quảng cáo và truy cập vào phần mềm khác trên Nền tảng của chúng tôi hoặc
+                            thông qua Dịch vụ, phần lớn các thông tin tương tự được gửi đến cho chúng tôi (bao gồm nhưng
+                            không giới hạn, địa chỉ IP, hệ điều hành, v.v..); nhưng, thay vì các số lượt xem trang,
+                            thiết bị của bạn gửi đến chúng tôi các thông tin về nội dung, quảng cáo được xem và/hoặc
+                            phần mềm được cài đặt bởi các Dịch vụ và Nền tảng và thời điểm. <br>
+                        </p>
+
+                        <h3 class="policy_content-title2">4. COOKIES</h3>
+                        <p class="policy_content">
+                            4.1 Đôi khi chúng tôi hoặc các nhà cung cấp dịch vụ được cho phép và các đối tác quảng cáo
+                            của chúng tôi có thể sử dụng "cookie" hoặc các tính năng khác để cho phép chúng tôi hoặc các
+                            bên thứ ba thu thập hoặc chia sẻ thông tin liên quan đến việc sử dụng của bạn đối với Dịch
+                            vụ hoặc Nền tảng của chúng tôi. Các tính năng này sẽ giúp chúng tôi cải thiện Nền tảng và
+                            Các Dịch Vụ chúng tôi cung cấp, giúp chúng tôi đề xuất các dịch vụ và tính năng mới, và/hoặc
+                            cho phép chúng tôi và các đối tác quảng cáo của chúng tôi cung cấp các nội dung có liên quan
+                            hơn đến bạn. "Cookie" là các mã danh định được lưu trữ trên máy tính hoặc thiết bị di động
+                            của bạn lưu trữ các dữ liệu về máy tính hoặc thiết bị, bằng cách nào và khi nào Các Dịch Vụ
+                            hoặc Nền tảng được sử dụng hay truy cập, bởi bao nhiêu người và để theo dõi những hoạt động
+                            trong Các Nền tảng của chúng tôi. Chúng tôi có thể liên kết thông tin cookie với dữ liệu cá
+                            nhân. Cookie cũng liên kết với thông tin về những nội dung bạn đã chọn để mua sắm và các
+                            trang web mà bạn đã xem. Thông tin này được sử dụng để theo dõi giỏ hàng, để chuyển tải nội
+                            dung phù hợp với sở thích của bạn, để cho phép các đối tác cung cấp dịch vụ quảng cáo cung
+                            cấp dịch vụ quảng cáo trên các trang thông qua mạng Internet và để thực hiện phân tích dữ
+                            liệu và hoặc theo dõi việc sử dụng Dịch vụ <br>
+                            4.2 Bạn có thể từ chối sử dụng cookie bằng cách chọn các thiết lập thích hợp trên trình
+                            duyệt hoặc thiết bị của bạn. Tuy nhiên, vui lòng lưu ý rằng nếu bạn thực hiện thao tác này
+                            bạn có thể không sử dụng được các chức năng đầy đủ của Nền tảng hoặc Các Dịch Vụ của chúng
+                            tôi. <br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ngăn cách content với footer -->
+        <div style="padding-bottom: 70px; background-color: #fff"></div>
+
+        <footer class="footer" id="footer">
+            <!-- được render từ file footer.js  -->
+        </footer>
+    </div>
+
+    <!-- modal  -->
+    <div id="modal_wrap">
+        <!-- render từ file modal.js  -->
+    </div>
+    <!-- chat message  -->
+    <div id="chat-box">
+        <!-- render từ file chatbox.js  -->
+    </div>
+    <!-- toast message  -->
+    <div id="toast">
+        <!-- render từ file toast.js  -->
+    </div>
+
+    <!-- render header -->
+    <script src="./header/header.js"></script>
+    <!-- render toast message  -->
+    <script src="./toast_messages/toast.js"></script>
+    <!-- render modal  -->
+    <script src="./modal/modal.js"></script>
+    <!-- Xử lý sự kiện click đăng ký/ Đăng nhập  -->
+    <script src="./javascript/logIn_and_Signup.js"></script>
+    <!-- import validator đăng ký, đăng nhập  -->
+    <script src="./javascript/validator.js"></script>
+    <!-- xử lý các rule, sự kiện đăng ký, đăng nhập, check đăng ký, đăng nhập thành công-->
+    <script>
+        const headerNavbarListTwo = document.querySelector('.header__navbar-list-two');
+        const headerMenu = document.querySelector('.header_menu');
+        var emailReg;
+        var passwordReg;
+        var emailLog;
+        var passwordLog;
+        // Đăng ký 
+        Validator({
+            form: "#form-1",
+            formGroupSelector: ".form-group",
+            errorSelector: ".form-message",
+            rules: [
+                // Validator.isRequired('#fullname'),
+                Validator.isRequired("#email"),
+                Validator.isEmail("#email"),
+                Validator.minLength("#password", 6),
+                Validator.isRequired("#password_confirmation"),
+                Validator.isConfirmed(
+                    "#password_confirmation",
+                    function () {
+                        return document.querySelector("#form-1 #password").value;
+                    },
+                    "Mật khẩu nhập lại không khớp"
+                ),
+            ],
+            onSubmit: function (data) {
+                //Call api
+                console.log(data);
+                emailReg = data.email;
+                passwordReg = data.password;
+
+                showSuccessSignUpToast();
+                logModal.classList.add('open');
+                regModal.classList.remove('open');
+            },
+        });
+        //Đăng nhập
+        Validator({
+            form: "#form-2",
+            formGroupSelector: ".form-group",
+            errorSelector: ".form-message",
+            rules: [
+                Validator.isRequired("#email"),
+                Validator.isEmail("#email"),
+                Validator.minLength("#password", 6),
+            ],
+            onSubmit: function (data) {
+                //Call api
+                console.log(data);
+                emailLog = data.email;
+                passwordLog = data.password;
+
+                if (emailReg === emailLog && passwordReg === passwordLog) {
+                    showSuccessLogInToast();
+                    logModal.classList.remove('open');
+                    // location.replace('/login_index.html');
+                    // headerNavbarListTwo.remove();
+                }
+                else {
+                    showErrorLogInToast();
+                }
+            },
+        });
+    </script>
+    <!-- xử lý trượt slider  -->
+    <script src="./javascript/slider.js"></script>
+    <!-- Time sale countDown -->
+    <script src="./javascript/countDownTime.js"></script>
+    <!-- object product 1  -->
+    <script src="./javascript/mainProduct.js"></script>
+    <!-- Đóng mở chat hỗ trợ trực tuyến -->
+    <script>
+        function openChat() {
+            document.getElementById("myChat").style.display = "block";
+        }
+        function closeChat() {
+            document.getElementById("myChat").style.display = "none";
+        }
+    </script>
+    <!-- Đóng mở menu mobile -->
+    <script>
+        function openMenuMobile() {
+            document.getElementById("menu_mobile").style.display = "block";
+        }
+        function closeMenuMobile() {
+            document.getElementById("menu_mobile").style.display = "none";
+        }
+    </script>
+    <!-- render chatbox  -->
+    <script src="./chatbox/chatbox.js"></script>
+    <!-- render footer -->
+    <script src="./footer/footer.js"></script>
+    <!-- xử lý click đóng mở policy  -->
+    <script>
+        function togglePolicy() {
+            document.getElementById('policy_list').classList.toggle("show");
+            document.getElementById('policy_up').classList.toggle("show");
+            document.getElementById('policy_down').classList.toggle("hide");
+        }
+        function togglePolicy1() {
+            document.getElementById('policy_list1').classList.toggle("show");
+            document.getElementById('policy_up1').classList.toggle("show");
+            document.getElementById('policy_down1').classList.toggle("hide");
+        }
+        function togglePolicy2() {
+            document.getElementById('policy_list2').classList.toggle("show");
+            document.getElementById('policy_up2').classList.toggle("show");
+            document.getElementById('policy_down2').classList.toggle("hide");
+        }
+        function togglePolicy3() {
+            document.getElementById('policy_list3').classList.toggle("show");
+            document.getElementById('policy_up3').classList.toggle("show");
+            document.getElementById('policy_down3').classList.toggle("hide");
+        }
+    </script>
+</body>
+
+</html>

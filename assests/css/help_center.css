@@ -1,0 +1,117 @@
+.back_homepage-nav.help_center-nav {
+    font-size: 2.3rem; 
+    margin: 0 0 26px -24px;
+}
+
+.support_title {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.qs_list {
+
+}
+
+.qs_item {
+    font-size: 1.6rem;
+    line-height: 2.7rem;
+    cursor: pointer;
+}
+
+.qs_item:hover {
+    color: var(--primary-color);
+}
+
+.support_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 35px;
+}
+
+.support_box-wrap:hover {
+    cursor: pointer;
+    background-color: #F9F9F9;
+}
+
+.support_box-wrap {
+    height: 190px;
+    width: 273px;
+    border: 1px solid var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.support_box-item-wrap {
+    
+}
+
+.support_box-icon-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.support_box-item {
+    font-size: 5rem;
+    color: #6E6B93;
+}
+
+.support_box-title {
+    font-size: 1.7rem;
+}
+
+.support_bottom {
+    text-align: center;
+}
+
+.support_bottom-title {
+    font-size: 2rem;
+}
+
+.support_bottom-title1 {
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+}
+
+.support_bottom-separate {
+    display: flex;
+    justify-content: center;
+}
+
+.support_bottom-separate-line {
+    margin: 30px 0 10px 0;
+    border-top: 1px solid #ccc;
+    width: 28%;
+}
+
+.support_bottom-title2 {
+    font-size: 1.3rem;
+    line-height: 2.6rem;
+}
+
+.support_bottom-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.like_icon,
+.dislike_icon {
+    font-size: 2.9rem;
+    color: #999;
+    cursor: pointer;
+}
+
+.dislike_icon {
+    transform: scaleX(-1);
+}
+
+.like_icon:hover {
+    color: var(--primary-color);
+}
+
+.dislike_icon:hover {
+    color: red;
+}

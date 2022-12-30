@@ -1,0 +1,108 @@
+.open_chat {
+    background-color: var(--orange-color);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--white-color);
+    box-shadow: 0 1px 10px 0 rgb(0 0 0 / 10%);
+    cursor: pointer;
+    position: fixed;
+    /* bottom: 36px; */
+    top: 650px;
+    right: 30px;
+    z-index: 9;
+}
+
+.open_chat-icon {
+    font-size: 2.6rem;
+}
+
+.chat-popup {
+    display: none;
+    position: fixed;
+    bottom: 15px;
+    right: 26px;
+    /* border: 3px solid #f1f1f1; */
+    z-index: 9;
+    animation: fadeIn ease-in 0.1s;
+    border-radius: 9px;
+}
+
+.chat-popup_title-wrap {
+    background-color: var(--primary-color);
+    width: 100%;
+    box-shadow: 0 1px 16px 0 rgb(0 0 0 / 40%);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    position: relative;
+}
+
+.chat-popup-close {
+    font-size: 1.9rem;
+    color: var(--white-color);
+    position: absolute;
+    right: 9px;
+    top: 9px;
+}
+
+.chat-popup-close:hover {
+    color: rgb(228, 56, 56);
+    cursor: pointer;
+}
+
+.chat-popup_title {
+    text-align: center; 
+    font-size: 1.8rem;
+    color: var(--white-color);
+    margin: 0;
+    padding: 16px 0 16px 0;
+}
+
+.chat-container {
+    max-width: 320px;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0 1px 16px 0 rgb(0 0 0 / 40%);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    /* border: 3px solid var(--primary-color); */
+    /* border-radius: 16px; */
+}
+
+.chat-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 6px 0;
+    border: none;
+    background: #f1f1f1; 
+    resize: none;
+    min-height: 130px;
+}
+
+.chat-container textarea:focus {
+    background-color: #ddd;
+    outline: none;
+    border: 1px solid var(--primary-color);
+}
+
+.chat-container .btn {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 7px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.9;
+}
+
+.chat-container .cancel {
+    background-color: red;
+}
+
+.chat-container .btn:hover, .open-button:hover {
+    opacity: 1;
+}

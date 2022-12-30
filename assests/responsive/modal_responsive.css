@@ -1,0 +1,102 @@
+/* Mobile & tablet */
+@media (max-width: 1023px) {
+   
+}
+
+/* Tablet  */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .form {
+        padding: 12px 24px;
+        width: 450px;
+    }
+
+    .modal.modal_reg {
+        top: -207px;
+    }
+
+    .modal.modal_log {
+        top: -207px;
+    }
+
+    .form .heading {
+        font-size: 1.8rem;
+    }
+
+    .form .desc {
+        font-size: 1.6rem;
+    }
+
+    .spacer {
+        margin-top: 25px;
+    }
+}
+
+/* Mobile  */
+@media (max-width: 739px) {
+    .modal.modal_log,
+    .modal.modal_reg {
+        top: 20px;
+    }
+
+    .form {
+        padding: 10px 24px;
+    }
+
+    .form_heading-icon {
+        font-size: 2rem;
+    }
+
+    .form .heading {
+        font-size: 1.4rem;
+    }
+
+    .form .desc {
+        font-size: 1.2rem;
+    }
+
+    .spacer {
+        margin-top: 4px;
+    }
+
+    .form-label {
+        padding-bottom: 6px;
+        font-size: 1.2rem;
+    }
+
+    .form-message {
+        font-size: 1.1rem;
+    }
+
+    .form-group {
+        margin-bottom: 8px;
+    }
+
+    .form-control {
+        height: 32px;
+        padding: 8px 12px;
+        font-size: 1.2rem;
+    }
+
+    .form-submit {
+        padding: 7px 16px;
+        font-size: 12px;
+    }
+
+    .switch_to_log-title, 
+    .switch_to_reg-title {
+        font-size: 1.1rem;
+    }
+
+    .switch_to_log-btn, 
+    .switch_to_reg-btn {
+        font-size: 1.1rem;
+    }
+
+    .log_rmb-pw-tittle {
+        font-size: 1.1rem;
+    }
+
+    .log_forgotpw {
+        font-size: 1.1rem;
+    }
+}

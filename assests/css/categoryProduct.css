@@ -1,0 +1,65 @@
+/* category color  */
+.mobile_filter-wrap {
+    display: flex;
+    justify-content: flex-end;
+    display: none;
+}
+
+.mobile_filter {
+    font-size: 1.9rem;
+}
+
+.show {
+    display: block !important;
+}
+
+.hide {
+    display: none;
+}
+
+.mobile_filter:hover {
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
+.contact_nav.category_nav {
+    margin: 43px 0 11px 0;
+}
+
+.category__list.list-color {
+    display: flex;
+}
+
+.category__list-box {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    margin: 12px 0 10px 26px;
+    border: solid 1px #999;
+}
+
+.category__list-box:hover {
+    cursor: pointer;
+    border: solid 2px var(--primary-color);
+}
+
+.category__list-box.type-red {
+    background-color: red;
+}
+
+.category__list-box.type-green {
+    background-color: green;
+}
+
+.category__list-box.type-purple {
+    background-color: purple;
+}
+
+.category__list-box.type-white {
+    background-color: white;
+}
+
+.category__list-box.type-yellow {
+    background-color: yellow;
+}
+

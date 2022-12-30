@@ -1,0 +1,67 @@
+.back_homepage-nav.policy_nav {
+    font-size: 2.3rem; 
+    margin: 0 0 26px -24px;
+}
+
+.policy_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.policy_list-title {
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.policy_list-title:hover {
+    color: var(--primary-color);
+}
+
+.policy_icon {
+    font-size: 1.5rem;
+}
+
+.policy_list {
+    list-style: none;
+    padding: 0;
+    display: none;
+    margin: 0;
+}
+
+.policy_item {
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+    cursor: pointer;
+}
+
+.policy_item:hover {
+    color: var(--primary-color);
+}
+
+.policy_up {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.policy_content-title1 {
+    font-size: 2.7rem;
+}
+
+.policy_content-title2 {
+    font-size: 1.5rem;
+    padding-top: 6px;
+}
+
+.policy_content {
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+    text-align: justify;
+}

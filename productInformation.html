@@ -1,0 +1,1636 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>G10 MARKET</title>
+  <link rel="icon" type="image/x-icon" href="./assests/img/icon_main.png" />
+  <!--reset css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link rel="stylesheet" href="./assests/css/grid.css" />
+  <link rel="stylesheet" href="./assests/css/base.css" />
+  <link rel="stylesheet" href="./assests/css/main.css" />
+  <link rel="stylesheet" href="./assests/css/responsive.css" />
+  <link rel="stylesheet" href="./modal/modal.css" />
+  <link rel="stylesheet" href="./categoryProduct.css">
+  <link rel="stylesheet" href="./assests/css/productInformation.css">
+  <link rel="stylesheet" href="./header/header.css">
+  <link rel="stylesheet" href="./footer/footer.css">
+  <link rel="stylesheet" href="./contact_page/contact.css">
+  <link rel="stylesheet" href="./chatbox/chatbox.css">
+  <link rel="stylesheet" href="./assests/responsive/header_responsive.css">
+  <link rel="stylesheet" href="./assests/responsive/modal_responsive.css">
+  <link rel="stylesheet" href="./assests/responsive/index_responsive.css">
+  <link rel="stylesheet" href="./assests/responsive/productInformation_responsive.css">
+  <link rel="stylesheet" href="./assests/fonts/fontawesome-free-6.2.0-web/css/all.min.css" />
+  <!--Nhúng font-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400, 500, 700&display=swap&subset=vietnamese"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <div class="app">
+    <header class="header" id="header">
+      <!-- được render từ file header.js  -->
+    </header>
+
+    <!-- category mobile -->
+    <div class="menu_mobile" id="menu_mobile">
+      <div class="menu_close">
+        <i class="menu_close-icon fa-solid fa-xmark" onclick="closeMenuMobile()"></i>
+      </div>
+
+      <div class="header__search-mobile">
+        <div class="header__search-input-wrap">
+          <input type="text" class="header__search-input" placeholder="Tìm kiếm trên G10 Market">
+        </div>
+
+        <button class="header__search-btn">
+          <i class="header__search-btn-icon fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+
+      <nav class="category_mobile">
+        <div class="category__heading">
+          <h3 class="category__heading-tittle">DANH MỤC</h3>
+        </div>
+        <ul class="category__list">
+          <li class="category__list-tittle">
+            <a href="./categoryProduct.html?raunhapkhau" class="category__list-tittle-link">Rau nhập khẩu</a>
+          </li>
+          <li class="category__list-tittle">
+            <a href="./categoryProduct.html?hoaquatuoi" class="category__list-tittle-link"> Hoa quả tươi </a>
+          </li>
+          <li class="category__list-tittle">
+            <a href="./categoryProduct.html?traicaynhapkhau" class="category__list-tittle-link"> Trái cây nhập
+              khẩu</a>
+          </li>
+          <li class="category__list-tittle">
+            <a href="./categoryProduct.html?namcacloai" class="category__list-tittle-link"> Nấm các loại</a>
+          </li>
+          <li class="category__list-tittle">
+            <a href="./categoryProduct.html?hoaquadalat" class="category__list-tittle-link"> Hoa quả Đà Lạt</a>
+          </li>
+          <li class="category__list-tittle">
+            <a href="./categoryProduct.html?rautuoisach" class="category__list-tittle-link"> Rau tươi sạch</a>
+          </li>
+          <li class="category__list-tittle">
+            <a href="./categoryProduct.html?cacloaicuqua" class="category__list-tittle-link"> Các loại củ quả</a>
+          </li>
+          <li class="category__list-tittle">
+            <a href="./categoryProduct.html?taocacloai" class="category__list-tittle-link"> Táo các loại </a>
+          </li>
+          <li class="category__list-tittle">
+            <a href="./categoryProduct.html?hoaquasaykho" class="category__list-tittle-link"> Hoa quả sấy khô</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="app_container">
+      <!-- Ngăn cách với header  -->
+      <div style="padding-top: 15px; background-color: #f5f5f5"></div>
+
+      <div class="grid wide">
+        <!-- tiêu đề category (một vài thẻ dùng chung với phần contact)  -->
+        <div class="col l-12 m-12 c-12">
+          <div class="contact_nav">
+            <a href="./index.html" class="back_homepage-nav info_page">Trang
+              chủ</a>
+            <h3 class="contact_seperate info_page">/</h3>
+            <a href="" class="contact_page-nav info_page">Thông tin sản phẩm</a>
+          </div>
+        </div>
+        <!-- product information  -->
+        <div class="row product_infomation">
+          <!-- ảnh  -->
+          <div class="col l-5 m-12 c-12">
+            <img src="./assests/img/products/pd1.webp" alt="" class="product_info-img">
+          </div>
+          <!-- thông tin sản phẩm  -->
+          <div class="col l-7 m-12 c-12" style="padding: 0 15px 0 15px;">
+            <p class="product_info-title">Nho Đà Lạt</p>
+            <h3 class="product_info-price">200.000 ₫</h3>
+            <p class="product_info-des">Giá trị dinh dưỡng: Hoa quả tươi cung cấp các chất dinh dưỡng, làm giảm mệt nhọc
+              ngay lập tức. Các nghiên cứu cho thấy hoa quả tươi có chứa vitamin A, C, Calcium và sắt giúp duy trì sức
+              khỏe, tốt cho tim mạch, ngăn ngừa tiến trình bệnh tiểu đường. Cũng như Táo, Nho của Mỹ, Úc… đều được bảo
+              quản theo tiêu chuẩn nghiêm ngặt</p>
+
+            <div class="product_info-wrap">
+              <p class="product_info-status">Trạng thái</p>
+              <span class="product_info-status-content">
+                <i class="fa-solid fa-check"></i>
+                Còn hàng
+              </span>
+            </div>
+
+            <p class="product_info-ship">Vận chuyển
+              <i class="fa-solid fa-truck-fast" style="color: #00BFA5; margin-left: 20px;"></i>
+              <span class="product_info-ship-content">Miễn phí vận chuyển</span>
+            </p>
+
+            <p class="product_info-brand" style="margin-bottom: 8px;">Thương hiệu
+              <span class="product_info-brand-name" style="margin-left: 16px;">Úc</span>
+            </p>
+
+            <div class="product_info-amount-wrap">
+              <p class="product_info-amount">Số lượng</p>
+              <div class="box-cal" style="margin-left: 16px;">
+                <p style="font-size: 1.8rem;">-</p>
+              </div>
+              <input type="text" class="product_info-amount-input" placeholder="1">
+              <div class="box-cal" style="margin-right: 16px;">
+                <p style="font-size: 1.8rem;">+</p>
+              </div>
+              <p class="product_info-amount" style="font-size: 1.4rem;">Còn lại 1305 sản phẩm</p>
+            </div>
+
+            <button class="product_info-btn btn btn--primary">Thêm vào giỏ hàng</button>
+          </div>
+        </div>
+
+        <!-- row sản phẩm gợi ý  -->
+        <div class="row" style="background-color: var(--white-color);margin-top: 16px;">
+          <div class="col l-12 m-12 c-12">
+            <p class="same_product-tittle">Sản phẩm gợi ý</p>
+            <div class="same_product" style="overflow-x: auto;">
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Đánh giá nhận xét từ khách hàng -->
+        <div class="row product_rate">
+          <div class="col l-12">
+            <p class="product_rate-title">Đánh Giá - Nhận Xét Từ Khách Hàng</p>
+          </div>
+
+          <div class="col l-4" style="margin-left: 30px;">
+            <!-- rating, số sao, số cmt  -->
+            <div class="number_star-wrap">
+              <p class="product_rate-number">4.2</p>
+              <div class="star_countcmt-wrap">
+                <div class="product_rate-star">
+                  <i class="fa-solid fa-star" style="color: #FFD52E;font-size: 1.8rem;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD52E;font-size: 1.8rem;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD52E;font-size: 1.8rem;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD52E;font-size: 1.8rem;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD52E;font-size: 1.8rem;"></i>
+                </div>
+                <p class="count_comment">5 nhận xét</p>
+              </div>
+            </div>
+
+            <!-- 5 hàng star  -->
+            <div class="star_row">
+              <i class="fa-solid fa-star" style="color: #FFD52E;font-size: 1.3rem;"></i>
+              <i class="fa-solid fa-star" style="color: #FFD52E;font-size: 1.3rem;"></i>
+              <i class="fa-solid fa-star" style="color: #FFD52E;font-size: 1.3rem;"></i>
+              <i class="fa-solid fa-star" style="color: #FFD52E;font-size: 1.3rem;"></i>
+              <i class="fa-solid fa-star" style="color: #FFD52E;font-size: 1.3rem;"></i>
+
+              <div class="star-progress_bar">
+                <div class="star-progress_bar-active" style="width: 80%;"></div>
+              </div>
+
+              <p class="star_row-count">4</p>
+            </div>
+            <div class="star_row">
+              <i class="fa-solid fa-star" style="color: #FFD52E;font-size: 1.3rem;"></i>
+              <i class="fa-solid fa-star" style="color: #FFD52E;font-size: 1.3rem;"></i>
+              <i class="fa-solid fa-star" style="color: #FFD52E;font-size: 1.3rem;"></i>
+              <i class="fa-solid fa-star" style="color: #FFD52E;font-size: 1.3rem;"></i>
+              <i class="fa-solid fa-star" style="color: #EFEFEF;font-size: 1.3rem;"></i>
+
+              <div class="star-progress_bar">
+                <div class="star-progress_bar-active" style="width: 0;"></div>
+              </div>
+
+              <p class="star_row-count">0</p>
+            </div>
+            <div class="star_row">
+              <i class="fa-solid fa-star" style="color: #FFD52E;font-size: 1.3rem;"></i>
+              <i class="fa-solid fa-star" style="color: #FFD52E;font-size: 1.3rem;"></i>
+              <i class="fa-solid fa-star" style="color: #FFD52E;font-size: 1.3rem;"></i>
+              <i class="fa-solid fa-star" style="color: #EFEFEF;font-size: 1.3rem;"></i>
+              <i class="fa-solid fa-star" style="color: #EFEFEF;font-size: 1.3rem;"></i>
+
+              <div class="star-progress_bar">
+                <div class="star-progress_bar-active" style="width: 0;"></div>
+              </div>
+
+              <p class="star_row-count">0</p>
+            </div>
+            <div class="star_row">
+              <i class="fa-solid fa-star" style="color: #FFD52E;font-size: 1.3rem;"></i>
+              <i class="fa-solid fa-star" style="color: #FFD52E;font-size: 1.3rem;"></i>
+              <i class="fa-solid fa-star" style="color: #EFEFEF;font-size: 1.3rem;"></i>
+              <i class="fa-solid fa-star" style="color: #EFEFEF;font-size: 1.3rem;"></i>
+              <i class="fa-solid fa-star" style="color: #EFEFEF;font-size: 1.3rem;"></i>
+
+              <div class="star-progress_bar">
+                <div class="star-progress_bar-active" style="width: 0;"></div>
+              </div>
+
+              <p class="star_row-count">0</p>
+            </div>
+            <div class="star_row">
+              <i class="fa-solid fa-star" style="color: #FFD52E;font-size: 1.3rem;"></i>
+              <i class="fa-solid fa-star" style="color: #EFEFEF;font-size: 1.3rem;"></i>
+              <i class="fa-solid fa-star" style="color: #EFEFEF;font-size: 1.3rem;"></i>
+              <i class="fa-solid fa-star" style="color: #EFEFEF;font-size: 1.3rem;"></i>
+              <i class="fa-solid fa-star" style="color: #EFEFEF;font-size: 1.3rem;"></i>
+
+              <div class="star-progress_bar">
+                <div class="star-progress_bar-active" style="width: 20%;"></div>
+              </div>
+
+              <p class="star_row-count">1</p>
+            </div>
+          </div>
+
+          <div class="col l-6">
+            <div class="img_name_star_cmt-wrap">
+              <img src="./assests/img/avtcmt.png" alt="" class="user_cmt-avt">
+              <div class="name_star_cmt-wrap">
+                <p class="user_cmt-name">Trần Văn Định</p>
+                <div class="user_cmt-star">
+                  <i class="fa-solid fa-star" style="color: #FFD52E;font-size: 1.2rem;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD52E;font-size: 1.2rem;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD52E;font-size: 1.2rem;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD52E;font-size: 1.2rem;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD52E;font-size: 1.2rem;"></i>
+                </div>
+                <p class="user_cmt-date">2022-11-20 16:41</p>
+                <p class="user_cmt-content">Sản phẩm chất lượng tốt, thực phẩm tươi ngon, giao hàng đúng thời gian</p>
+              </div>
+            </div>
+            <div class="img_name_star_cmt-wrap">
+              <img src="./assests/img/avtcmt.png" alt="" class="user_cmt-avt">
+              <div class="name_star_cmt-wrap">
+                <p class="user_cmt-name">Lê Mai Phương</p>
+                <div class="user_cmt-star">
+                  <i class="fa-solid fa-star" style="color: #FFD52E;font-size: 1.2rem;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD52E;font-size: 1.2rem;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD52E;font-size: 1.2rem;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD52E;font-size: 1.2rem;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD52E;font-size: 1.2rem;"></i>
+                </div>
+                <p class="user_cmt-date">2022-11-18 12:31</p>
+                <p class="user_cmt-content">Sản phẩm chất lượng tốt, thực phẩm tươi ngon, giao hàng đúng thời gian</p>
+              </div>
+            </div>
+            <div class="img_name_star_cmt-wrap">
+              <img src="./assests/img/avtcmt.png" alt="" class="user_cmt-avt">
+              <div class="name_star_cmt-wrap">
+                <p class="user_cmt-name">Đỗ Quốc Bảo</p>
+                <div class="user_cmt-star">
+                  <i class="fa-solid fa-star" style="color: #FFD52E;font-size: 1.2rem;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD52E;font-size: 1.2rem;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD52E;font-size: 1.2rem;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD52E;font-size: 1.2rem;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD52E;font-size: 1.2rem;"></i>
+                </div>
+                <p class="user_cmt-date">2022-11-16 21:51</p>
+                <p class="user_cmt-content">Sản phẩm chất lượng tốt, thực phẩm tươi ngon, giao hàng đúng thời gian</p>
+              </div>
+            </div>
+            <div class="img_name_star_cmt-wrap">
+              <img src="./assests/img/avtcmt.png" alt="" class="user_cmt-avt">
+              <div class="name_star_cmt-wrap">
+                <p class="user_cmt-name">Nguyễn Thu An</p>
+                <div class="user_cmt-star">
+                  <i class="fa-solid fa-star" style="color: #FFD52E;font-size: 1.2rem;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD52E;font-size: 1.2rem;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD52E;font-size: 1.2rem;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD52E;font-size: 1.2rem;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD52E;font-size: 1.2rem;"></i>
+                </div>
+                <p class="user_cmt-date">2022-11-15 12:21</p>
+                <p class="user_cmt-content">Sản phẩm chất lượng tốt, thực phẩm tươi ngon, giao hàng đúng thời gian</p>
+              </div>
+            </div>
+            <div class="img_name_star_cmt-wrap" style="padding-bottom: 30px;">
+              <img src="./assests/img/avtcmt.png" alt="" class="user_cmt-avt">
+              <div class="name_star_cmt-wrap">
+                <p class="user_cmt-name">Mai Văn Linh</p>
+                <div class="user_cmt-star">
+                  <i class="fa-solid fa-star" style="color: #FFD52E;font-size: 1.2rem;"></i>
+                  <i class="fa-solid fa-star" style="color: #EFEFEF;font-size: 1.2rem;"></i>
+                  <i class="fa-solid fa-star" style="color: #EFEFEF;font-size: 1.2rem;"></i>
+                  <i class="fa-solid fa-star" style="color: #EFEFEF;font-size: 1.2rem;"></i>
+                  <i class="fa-solid fa-star" style="color: #EFEFEF;font-size: 1.2rem;"></i>
+                </div>
+                <p class="user_cmt-date">2022-11-11 11:34</p>
+                <p class="user_cmt-content">Giao hàng chậm, sản phẩm không giống trên ảnh</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ngăn cách content với footer -->
+    <div style="padding-bottom: 30px; background-color: #f5f5f5"></div>
+
+    <footer class="footer" id="footer">
+      <!-- được render từ file footer.js  -->
+    </footer>
+  </div>
+
+  <!-- modal  -->
+  <div id="modal_wrap">
+    <!-- render từ file modal.js  -->
+  </div>
+  <!-- chat message  -->
+  <div id="chat-box">
+    <!-- render từ file chatbox.js  -->
+  </div>
+
+  <!-- xử lý các chức năng xem chi tiết sản phẩm  -->
+  <script>
+    const b = document.querySelector.bind(document);
+    const bb = document.querySelectorAll.bind(document);
+
+    // lấy chuỗi tên ở cuối url của từng sp
+    const url = window.location.href;
+    let obj = "";
+    for (let i = url.length - 1; url[i] != "?"; i--) {
+      obj = url[i] + obj;
+    }
+    console.log(obj);
+
+    // render thông tin sản phẩm
+    const app = {
+      products: [
+        {
+          id: '1',
+          type: 'hoaquadalat',
+          name: 'Nho Đà Lạt xuất khẩu',
+          price: '200.000',
+          image: './assests/img/products/pd1.webp',
+          color: 'purple',
+          brand: 'Đà Lạt',
+        },
+        {
+          id: '2',
+          type: 'traicaynhapkhau',
+          name: 'Táo New ZeaLand',
+          price: '150.000',
+          image: './assests/img/products/pd2.webp',
+          color: '',
+          brand: 'New ZeaLand',
+        },
+        {
+          id: '3',
+          type: 'traicaynhapkhau',
+          name: 'Kiwi xanh',
+          price: '250.000',
+          image: './assests/img/products/pd3.webp',
+          color: 'green',
+          brand: 'Mỹ',
+        },
+        {
+          id: '4',
+          type: 'traicaynhapkhau',
+          name: 'Chanh dây đỏ Úc',
+          price: '400.000',
+          image: './assests/img/products/pd4.webp',
+          color: '',
+          brand: 'Úc',
+        },
+        {
+          id: '5',
+          type: 'hoaquadalat',
+          name: 'Dưa leo Đà Lạt',
+          price: '50.000',
+          image: './assests/img/products/pd5.webp',
+          color: 'green',
+          brand: 'Đà Lạt',
+        },
+        {
+          id: '6',
+          type: 'traicaynhapkhau',
+          name: 'Nho Pháp không hạt',
+          price: '300.000',
+          image: './assests/img/products/pd6.webp',
+          color: 'purple',
+          brand: 'Pháp',
+        },
+        {
+          id: '7',
+          type: 'hoaquadalat',
+          name: 'Ớt ngọt Đà Lạt',
+          price: '80.000',
+          image: './assests/img/products/pd7.webp',
+          color: '',
+          brand: 'Đà Lạt',
+        },
+        {
+          id: '8',
+          type: 'traicaynhapkhau',
+          name: 'Mận Đào Úc',
+          price: '180.000',
+          image: './assests/img/products/pd8.webp',
+          color: 'purple',
+          brand: 'Úc',
+        },
+        {
+          id: '9',
+          name: 'Ớt chuông đỏ',
+          price: '130.000',
+          image: './assests/img/products/pd9.jpg',
+          color: 'red',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '10',
+          name: 'Ớt chuông ngọt',
+          price: '160.000',
+          image: './assests/img/products/pd10.webp',
+          color: '',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '11',
+          type: 'hoaquatuoi',
+          name: 'Dâu tây',
+          price: '100.000',
+          image: './assests/img/products/pd11.webp',
+          color: 'red',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '12',
+          name: 'Ớt sừng',
+          price: '20.000',
+          image: './assests/img/products/pd12.webp',
+          color: 'red',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '13',
+          name: 'Ớt chuông vàng',
+          price: '50.000',
+          image: './assests/img/products/pd13.webp',
+          color: 'yellow',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '14',
+          type: 'cacloaicuqua',
+          name: 'Su su non',
+          price: '80.000',
+          image: './assests/img/products/pd14.jpg',
+          color: 'green',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '15',
+          type: 'hoaquatuoi',
+          name: 'Phúc bồn tử',
+          price: '120.000',
+          image: './assests/img/products/pd15.webp',
+          color: '',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '16',
+          type: 'cacloaicuqua',
+          name: 'Tỏi',
+          price: '30.000',
+          image: './assests/img/products/pd16.webp',
+          color: 'white',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '17',
+          type: 'traicaynhapkhau',
+          name: 'Cranberry',
+          price: '150.000',
+          image: './assests/img/products/pd17.webp',
+          color: '',
+          brand: 'Mỹ',
+        },
+        {
+          id: '18',
+          type: 'traicaynhapkhau',
+          name: 'Acaiberry grandy',
+          price: '2.500.000',
+          image: './assests/img/products/pd18.webp',
+          color: '',
+          brand: 'Mỹ',
+        },
+        {
+          id: '19',
+          type: 'namcacloai',
+          name: 'Nấm hương',
+          price: '70.000',
+          image: './assests/img/products/pd19.webp',
+          color: 'white',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '20',
+          type: 'cacloaicuqua',
+          name: 'Khoai môn',
+          price: '140.000',
+          image: './assests/img/products/pd20.webp',
+          color: '',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '21',
+          type: 'cacloaicuqua',
+          name: 'Khoai lang tím',
+          price: '145.000',
+          image: './assests/img/products/pd21.webp',
+          color: 'purple',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '22',
+          type: 'cacloaicuqua',
+          name: 'Hành củ',
+          price: '32.000',
+          image: './assests/img/products/pd22.webp',
+          color: '',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '23',
+          type: 'cacloaicuqua',
+          name: 'Khoai tây',
+          price: '75.000',
+          image: './assests/img/products/pd23.webp',
+          color: '',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '24',
+          type: 'hoaquatuoi',
+          name: 'Chuối xanh',
+          price: '45.000',
+          image: './assests/img/products/pd24.webp',
+          color: 'green',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '25',
+          type: 'raunhapkhau',
+          name: 'Cải xoăn',
+          price: '55.000',
+          image: './assests/img/products/pd25.jpg',
+          color: 'green',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '26',
+          type: 'hoaquatuoi',
+          name: 'Xoài cát Hòa Lộc',
+          price: '125.000',
+          image: './assests/img/products/pd25.webp',
+          color: 'yellow',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '27',
+          type: 'hoaquatuoi',
+          name: 'Táo xanh',
+          price: '60.000',
+          image: './assests/img/products/pd26.webp',
+          color: 'green',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '28',
+          type: 'cacloaicuqua',
+          name: 'Cà chua Beef',
+          price: '50.000',
+          image: './assests/img/products/pd27.webp',
+          color: 'red',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '29',
+          type: 'cacloaicuqua',
+          name: 'Hành tây',
+          price: '31.000',
+          image: './assests/img/products/pd28.webp',
+          color: '',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '30',
+          type: 'traicaynhapkhau',
+          name: 'Kiwi vàng',
+          price: '105.000',
+          image: './assests/img/products/pd29.webp',
+          color: 'yellow',
+          brand: 'Mỹ',
+        },
+        {
+          id: '31',
+          type: 'hoaquatuoi',
+          name: 'Đu đủ ruột đỏ',
+          price: '35.000',
+          image: './assests/img/products/pd30.webp',
+          color: '',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '32',
+          type: 'hoaquatuoi',
+          name: 'Quả mâm xôi đen',
+          price: '95.000',
+          image: './assests/img/products/pd31.webp',
+          color: '',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '33',
+          type: 'hoaquatuoi',
+          name: 'Quýt ngọt',
+          price: '32.000',
+          image: './assests/img/products/pd32.webp',
+          color: 'green',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '34',
+          type: 'raunhapkhau',
+          name: 'Xà lách ICEBERG',
+          price: '28.000',
+          image: './assests/img/products/pd33.webp',
+          color: 'green',
+          brand: 'Úc',
+        },
+        {
+          id: '35',
+          type: 'cacloaicuqua',
+          name: 'Khoai mỡ tím',
+          price: '34.000',
+          image: './assests/img/products/pd34.webp',
+          color: 'purple',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '36',
+          type: 'namcacloai',
+          name: "Nấm đùi gà Rica",
+          price: "45.000",
+          image: "./assests/img/nam_cac_loai/npd1.webp",
+          color: 'white',
+          brand: 'Rica',
+        },
+        {
+          id: '37',
+          type: 'namcacloai',
+          name: "Nấm mối đen Rica",
+          price: "85.000",
+          image: "./assests/img/nam_cac_loai/npd2.webp",
+          color: 'white',
+          brand: 'Rica',
+        },
+        {
+          id: '38',
+          type: 'namcacloai',
+          name: "Nấm kim châm Rica",
+          price: "19.000",
+          image: "./assests/img/nam_cac_loai/npd3.webp",
+          color: 'white',
+          brand: 'Rica',
+        },
+        {
+          id: '39',
+          type: 'namcacloai',
+          name: "Nấm hoàng kim Rica",
+          price: "37.000",
+          image: "./assests/img/nam_cac_loai/npd4.webp",
+          color: 'yellow',
+          brand: 'Rica',
+        },
+        {
+          id: '40',
+          type: 'namcacloai',
+          name: "Nấm hương Phú Gia",
+          price: "109.000",
+          image: "./assests/img/nam_cac_loai/npd5.webp",
+          color: '',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '41',
+          type: 'namcacloai',
+          name: "Nấm bào ngư xám Rica",
+          price: "26.000",
+          image: "./assests/img/nam_cac_loai/npd6.webp",
+          color: 'white',
+          brand: 'Rica',
+        },
+        {
+          id: '42',
+          type: 'namcacloai',
+          name: "Nấm Porcini",
+          price: "250.000",
+          image: "./assests/img/nam_cac_loai/npd7.webp",
+          color: '',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '43',
+          type: 'namcacloai',
+          name: "Nấm Ngọc châm nâu",
+          price: "150.000",
+          image: "./assests/img/nam_cac_loai/npd8.webp",
+          color: 'white',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '44',
+          type: 'rautuoisach',
+          name: "Cần tây",
+          price: "38.000",
+          image: "./assests/img/rau/pd1.webp",
+          color: 'green',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '45',
+          type: 'rautuoisach',
+          name: "Cải ngọt hữu cơ",
+          price: "27.000",
+          image: "./assests/img/rau/pd2.webp",
+          color: 'green',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '46',
+          type: 'taocacloai',
+          name: 'Táo Breeze',
+          price: '89.000',
+          image: './assests/img/products/pd35.webp',
+          color: 'red',
+          brand: 'Mỹ',
+        },
+        {
+          id: '47',
+          type: 'taocacloai',
+          name: 'Táo Envy',
+          price: '99.000',
+          image: './assests/img/products/pd36.webp',
+          color: 'red',
+          brand: 'Mỹ',
+        },
+        {
+          id: '48',
+          type: 'hoaquasaykho',
+          name: 'Việt quất sấy khô',
+          price: '98.000',
+          image: './assests/img/hoaquasaykho/pd1.webp',
+          color: '',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '49',
+          type: 'hoaquasaykho',
+          name: 'Xoài sấy khô',
+          price: '65.000',
+          image: './assests/img/hoaquasaykho/pd2.webp',
+          color: 'yellow',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '50',
+          type: 'hoaquasaykho',
+          name: 'Cherry sấy khô',
+          price: '184.000',
+          image: './assests/img/products/pd37.webp',
+          color: 'red',
+          brand: 'Mỹ',
+        },
+        {
+          id: '51',
+          type: '',
+          name: 'Bầu sao Organic (50% giảm)',
+          price: '36.000',
+          image: './assests/img/saleproducts/spd5.webp',
+          color: '',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '52',
+          type: '',
+          name: 'Bí ngô (50% giảm)',
+          price: '86.000',
+          image: './assests/img/saleproducts/spd1.webp',
+          color: '',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '53',
+          type: '',
+          name: 'Cà chua (40% giảm)',
+          price: '28.000',
+          image: './assests/img/saleproducts/spd2.webp',
+          color: '',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '54',
+          type: '',
+          name: 'Vải thiều Bắc Giang (35% giảm)',
+          price: '58.000',
+          image: './assests/img/saleproducts/spd3.webp',
+          color: '',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '55',
+          type: '',
+          name: 'Bí đao (20% giảm)',
+          price: '55.000',
+          image: './assests/img/saleproducts/spd4.webp',
+          color: '',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '56',
+          type: '',
+          name: 'Táo đỏ Mỹ nhập khẩu',
+          price: '125.000',
+          image: './assests/img/Taodo-335x315.jpg',
+          color: '',
+          brand: 'Mỹ',
+        },
+        {
+          id: '57',
+          type: '',
+          name: 'Ổi Phúc Lộc Thọ',
+          price: '151.000',
+          image: './assests/img/top_search/tpd1.webp',
+          color: '',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '58',
+          type: '',
+          name: 'Cam Navel',
+          price: '61.000',
+          image: './assests/img/top_search/tpd2.webp',
+          color: '',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '59',
+          type: '',
+          name: 'Nho xanh không hạt',
+          price: '99.000',
+          image: './assests/img/top_search/tpd3.webp',
+          color: '',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '60',
+          type: '',
+          name: 'Dưa lưới',
+          price: '141.000',
+          image: './assests/img/top_search/tpd4.webp',
+          color: '',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '61',
+          type: '',
+          name: 'Củ dền (20% giảm)',
+          price: '18.000',
+          image: './assests/img/voucher/vc_1.webp',
+          color: '',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '62',
+          type: '',
+          name: 'Su hào trắng (20% giảm)',
+          price: '13.000',
+          image: './assests/img/voucher/vc_2.webp',
+          color: '',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '63',
+          type: '',
+          name: 'Rau Chicory đỏ (20% giảm)',
+          price: '120.000',
+          image: './assests/img/voucher/vc_3.webp',
+          color: '',
+          brand: 'Hà Lan',
+        },
+        {
+          id: '64',
+          type: '',
+          name: 'Bông cải tím (20% giảm)',
+          price: '229.000',
+          image: './assests/img/voucher/vc_4.webp',
+          color: '',
+          brand: 'Hà Lan',
+        },
+        {
+          id: '65',
+          type: '',
+          name: 'Xà lách búp đỏ (20% giảm)',
+          price: '38.000',
+          image: './assests/img/voucher/vc_5.webp',
+          color: '',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '66',
+          type: '',
+          name: 'Cà tím tròn (20% giảm)',
+          price: '36.000',
+          image: './assests/img/voucher/vc_6.webp',
+          color: '',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '67',
+          type: '',
+          name: 'Củ cải muối hữu cơ (20% giảm)',
+          price: '59.000',
+          image: './assests/img/voucher/vc_7.webp',
+          color: '',
+          brand: 'Việt Nam',
+        },
+      ],
+
+      // render product information
+      render: function () {
+        const htmls = this.products.map((product, index) => {
+          if (obj === product.id) {
+            return `
+            <!-- ảnh  -->
+            <div class="col l-4 m-12 c-12">
+              <img src="${product.image}" alt="" class="product_info-img" style="padding:30px 26px 26px 26px;">
+            </div>
+
+            <!-- thông tin sản phẩm  -->
+            <div class="col l-7 m-12 c-12" style="padding: 0 20px 0 20px;">
+              <p class="product_info-title">${product.name}</p>
+              <h3 class="product_info-price">${product.price} ₫</h3>
+             <p class="product_info-des">Giá trị dinh dưỡng: Hoa quả tươi cung cấp các chất dinh dưỡng, làm giảm mệt nhọc
+                ngay lập tức. Các nghiên cứu cho thấy hoa quả tươi có chứa vitamin A, C, Calcium và sắt giúp duy trì sức
+                khỏe, tốt cho tim mạch, ngăn ngừa tiến trình bệnh tiểu đường. Cũng như Táo, Nho của Mỹ, Úc… đều được bảo
+                quản theo tiêu chuẩn nghiêm ngặt</p>
+
+              <div class="product_info-wrap">
+                <p class="product_info-status">Trạng thái</p>
+                <span class="product_info-status-content">
+                  <i class="fa-solid fa-check"></i>
+                  Còn hàng
+                </span>
+              </div>
+
+              <p class="product_info-ship">Vận chuyển
+                <i class="fa-solid fa-truck-fast" style="color: #00BFA5; margin-left: 20px;"></i>
+                <span class="product_info-ship-content">Miễn phí vận chuyển</span>
+              </p>
+
+              <p class="product_info-brand" style="margin-bottom: 8px;">Thương hiệu
+                <span class="product_info-brand-name" style="margin-left: 16px;">${product.brand}</span>
+              </p>
+
+              <div class="product_info-amount-wrap">
+                <p class="product_info-amount-name">Số lượng</p>
+                <div class="box-cal" style="margin-left: 16px;">
+                <p style="font-size: 1.8rem;">-</p>
+              </div>
+              <input type="text" class="product_info-amount-input" placeholder="1">
+              <div class="box-cal" style="margin-right: 16px;">
+                <p style="font-size: 1.8rem;">+</p>
+              </div>
+              <p class="product_info-amount">Còn lại 1305 sản phẩm</p>
+            </div>
+
+            <button class="product_info-btn btn btn--primary">Thêm vào giỏ hàng</button>
+          </div>
+                    `
+          }
+        })
+
+        b('.product_infomation').innerHTML = htmls.join('');
+      },
+
+      start: function () {
+        this.render();
+      }
+    }
+    app.start();
+
+    //render ra 5 sản phẩm ngẫu nhiên tại mục "sản phẩm gợi ý"
+    const app2 = {
+      products: [
+        {
+          id: '1',
+          type: 'hoaquadalat',
+          name: 'Nho Đà Lạt xuất khẩu',
+          price: '200.000',
+          image: './assests/img/products/pd1.webp',
+          color: 'purple',
+          brand: 'Đà Lạt',
+        },
+        {
+          id: '2',
+          type: 'traicaynhapkhau',
+          name: 'Táo New ZeaLand',
+          price: '150.000',
+          image: './assests/img/products/pd2.webp',
+          color: '',
+          brand: 'New ZeaLand',
+        },
+        {
+          id: '3',
+          type: 'traicaynhapkhau',
+          name: 'Kiwi xanh',
+          price: '250.000',
+          image: './assests/img/products/pd3.webp',
+          color: 'green',
+          brand: 'Mỹ',
+        },
+        {
+          id: '4',
+          type: 'traicaynhapkhau',
+          name: 'Chanh dây đỏ Úc',
+          price: '400.000',
+          image: './assests/img/products/pd4.webp',
+          color: '',
+          brand: 'Úc',
+        },
+        {
+          id: '5',
+          type: 'hoaquadalat',
+          name: 'Dưa leo Đà Lạt',
+          price: '50.000',
+          image: './assests/img/products/pd5.webp',
+          color: 'green',
+          brand: 'Đà Lạt',
+        },
+        {
+          id: '6',
+          type: 'traicaynhapkhau',
+          name: 'Nho Pháp không hạt',
+          price: '300.000',
+          image: './assests/img/products/pd6.webp',
+          color: 'purple',
+          brand: 'Pháp',
+        },
+        {
+          id: '7',
+          type: 'hoaquadalat',
+          name: 'Ớt ngọt Đà Lạt',
+          price: '80.000',
+          image: './assests/img/products/pd7.webp',
+          color: '',
+          brand: 'Đà Lạt',
+        },
+        {
+          id: '8',
+          type: 'traicaynhapkhau',
+          name: 'Mận Đào Úc',
+          price: '180.000',
+          image: './assests/img/products/pd8.webp',
+          color: 'purple',
+          brand: 'Úc',
+        },
+        {
+          id: '9',
+          name: 'Ớt chuông đỏ',
+          price: '130.000',
+          image: './assests/img/products/pd9.jpg',
+          color: 'red',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '10',
+          name: 'Ớt chuông ngọt',
+          price: '160.000',
+          image: './assests/img/products/pd10.webp',
+          color: '',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '11',
+          type: 'hoaquatuoi',
+          name: 'Dâu tây',
+          price: '100.000',
+          image: './assests/img/products/pd11.webp',
+          color: 'red',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '12',
+          name: 'Ớt sừng',
+          price: '20.000',
+          image: './assests/img/products/pd12.webp',
+          color: 'red',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '13',
+          name: 'Ớt chuông vàng',
+          price: '50.000',
+          image: './assests/img/products/pd13.webp',
+          color: 'yellow',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '14',
+          type: 'cacloaicuqua',
+          name: 'Su su non',
+          price: '80.000',
+          image: './assests/img/products/pd14.jpg',
+          color: 'green',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '15',
+          type: 'hoaquatuoi',
+          name: 'Phúc bồn tử',
+          price: '120.000',
+          image: './assests/img/products/pd15.webp',
+          color: '',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '16',
+          type: 'cacloaicuqua',
+          name: 'Tỏi',
+          price: '30.000',
+          image: './assests/img/products/pd16.webp',
+          color: 'white',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '17',
+          type: 'traicaynhapkhau',
+          name: 'Cranberry',
+          price: '150.000',
+          image: './assests/img/products/pd17.webp',
+          color: '',
+          brand: 'Mỹ',
+        },
+        {
+          id: '18',
+          type: 'traicaynhapkhau',
+          name: 'Acaiberry grandy',
+          price: '2.500.000',
+          image: './assests/img/products/pd18.webp',
+          color: '',
+          brand: 'Mỹ',
+        },
+        {
+          id: '19',
+          type: 'namcacloai',
+          name: 'Nấm hương',
+          price: '70.000',
+          image: './assests/img/products/pd19.webp',
+          color: 'white',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '20',
+          type: 'cacloaicuqua',
+          name: 'Khoai môn',
+          price: '140.000',
+          image: './assests/img/products/pd20.webp',
+          color: '',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '21',
+          type: 'cacloaicuqua',
+          name: 'Khoai lang tím',
+          price: '145.000',
+          image: './assests/img/products/pd21.webp',
+          color: 'purple',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '22',
+          type: 'cacloaicuqua',
+          name: 'Hành củ',
+          price: '32.000',
+          image: './assests/img/products/pd22.webp',
+          color: '',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '23',
+          type: 'cacloaicuqua',
+          name: 'Khoai tây',
+          price: '75.000',
+          image: './assests/img/products/pd23.webp',
+          color: '',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '24',
+          type: 'hoaquatuoi',
+          name: 'Chuối xanh',
+          price: '45.000',
+          image: './assests/img/products/pd24.webp',
+          color: 'green',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '25',
+          type: 'raunhapkhau',
+          name: 'Cải xoăn',
+          price: '55.000',
+          image: './assests/img/products/pd25.jpg',
+          color: 'green',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '26',
+          type: 'hoaquatuoi',
+          name: 'Xoài cát Hòa Lộc',
+          price: '125.000',
+          image: './assests/img/products/pd25.webp',
+          color: 'yellow',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '27',
+          type: 'hoaquatuoi',
+          name: 'Táo xanh',
+          price: '60.000',
+          image: './assests/img/products/pd26.webp',
+          color: 'green',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '28',
+          type: 'cacloaicuqua',
+          name: 'Cà chua Beef',
+          price: '50.000',
+          image: './assests/img/products/pd27.webp',
+          color: 'red',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '29',
+          type: 'cacloaicuqua',
+          name: 'Hành tây',
+          price: '31.000',
+          image: './assests/img/products/pd28.webp',
+          color: '',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '30',
+          type: 'traicaynhapkhau',
+          name: 'Kiwi vàng',
+          price: '105.000',
+          image: './assests/img/products/pd29.webp',
+          color: 'yellow',
+          brand: 'Mỹ',
+        },
+        {
+          id: '31',
+          type: 'hoaquatuoi',
+          name: 'Đu đủ ruột đỏ',
+          price: '35.000',
+          image: './assests/img/products/pd30.webp',
+          color: '',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '32',
+          type: 'hoaquatuoi',
+          name: 'Quả mâm xôi đen',
+          price: '95.000',
+          image: './assests/img/products/pd31.webp',
+          color: '',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '33',
+          type: 'hoaquatuoi',
+          name: 'Quýt ngọt',
+          price: '32.000',
+          image: './assests/img/products/pd32.webp',
+          color: 'green',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '34',
+          type: 'raunhapkhau',
+          name: 'Xà lách ICEBERG',
+          price: '28.000',
+          image: './assests/img/products/pd33.webp',
+          color: 'green',
+          brand: 'Úc',
+        },
+        {
+          id: '35',
+          type: 'cacloaicuqua',
+          name: 'Khoai mỡ tím',
+          price: '34.000',
+          image: './assests/img/products/pd34.webp',
+          color: 'purple',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '36',
+          type: 'namcacloai',
+          name: "Nấm đùi gà Rica",
+          price: "45.000",
+          image: "./assests/img/nam_cac_loai/npd1.webp",
+          color: 'white',
+          brand: 'Rica',
+        },
+        {
+          id: '37',
+          type: 'namcacloai',
+          name: "Nấm mối đen Rica",
+          price: "85.000",
+          image: "./assests/img/nam_cac_loai/npd2.webp",
+          color: 'white',
+          brand: 'Rica',
+        },
+        {
+          id: '38',
+          type: 'namcacloai',
+          name: "Nấm kim châm Rica",
+          price: "19.000",
+          image: "./assests/img/nam_cac_loai/npd3.webp",
+          color: 'white',
+          brand: 'Rica',
+        },
+        {
+          id: '39',
+          type: 'namcacloai',
+          name: "Nấm hoàng kim Rica",
+          price: "37.000",
+          image: "./assests/img/nam_cac_loai/npd4.webp",
+          color: 'yellow',
+          brand: 'Rica',
+        },
+        {
+          id: '40',
+          type: 'namcacloai',
+          name: "Nấm hương Phú Gia",
+          price: "109.000",
+          image: "./assests/img/nam_cac_loai/npd5.webp",
+          color: '',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '41',
+          type: 'namcacloai',
+          name: "Nấm bào ngư xám Rica",
+          price: "26.000",
+          image: "./assests/img/nam_cac_loai/npd6.webp",
+          color: 'white',
+          brand: 'Rica',
+        },
+        {
+          id: '42',
+          type: 'namcacloai',
+          name: "Nấm Porcini",
+          price: "250.000",
+          image: "./assests/img/nam_cac_loai/npd7.webp",
+          color: '',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '43',
+          type: 'namcacloai',
+          name: "Nấm Ngọc châm nâu",
+          price: "150.000",
+          image: "./assests/img/nam_cac_loai/npd8.webp",
+          color: 'white',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '44',
+          type: 'rautuoisach',
+          name: "Cần tây",
+          price: "38.000",
+          image: "./assests/img/rau/pd1.webp",
+          color: 'green',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '45',
+          type: 'rautuoisach',
+          name: "Cải ngọt hữu cơ",
+          price: "27.000",
+          image: "./assests/img/rau/pd2.webp",
+          color: 'green',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '46',
+          type: 'taocacloai',
+          name: 'Táo Breeze',
+          price: '89.000',
+          image: './assests/img/products/pd35.webp',
+          color: 'red',
+          brand: 'Mỹ',
+        },
+        {
+          id: '47',
+          type: 'taocacloai',
+          name: 'Táo Envy',
+          price: '99.000',
+          image: './assests/img/products/pd36.webp',
+          color: 'red',
+          brand: 'Mỹ',
+        },
+        {
+          id: '48',
+          type: 'hoaquasaykho',
+          name: 'Việt quất sấy khô',
+          price: '98.000',
+          image: './assests/img/hoaquasaykho/pd1.webp',
+          color: '',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '49',
+          type: 'hoaquasaykho',
+          name: 'Xoài sấy khô',
+          price: '65.000',
+          image: './assests/img/hoaquasaykho/pd2.webp',
+          color: 'yellow',
+          brand: 'Việt Nam',
+        },
+        {
+          id: '50',
+          type: 'hoaquasaykho',
+          name: 'Cherry sấy khô',
+          price: '184.000',
+          image: './assests/img/products/pd37.webp',
+          color: 'red',
+          brand: 'Mỹ',
+        },
+      ],
+
+      render: function () {
+        // khởi tạo 5 giá trị ngẫu nhiên nhưng không trùng nhau dùng để lấy ra 5 id ngẫu nhiên của sản phẩm
+        temp1 = Math.floor(Math.random() * 50) + 1;
+        temp2 = Math.floor(Math.random() * 50) + 1;
+        while (temp2 === temp1) {
+          temp2 = Math.floor(Math.random() * 50) + 1;
+        }
+        temp3 = Math.floor(Math.random() * 50) + 1;
+        while (temp3 === temp2 || temp3 === temp1) {
+          temp3 = Math.floor(Math.random() * 50) + 1;
+        }
+        temp4 = Math.floor(Math.random() * 50) + 1;
+        while (temp4 === temp3 || temp4 === temp2 || temp4 === temp1) {
+          temp4 = Math.floor(Math.random() * 50) + 1;
+        }
+        temp5 = Math.floor(Math.random() * 50) + 1;
+        while (temp5 === temp4 || temp5 === temp3 || temp5 === temp2 || temp5 === temp1) {
+          temp5 = Math.floor(Math.random() * 50) + 1;
+        }
+
+        const htmls = this.products.map((product, index) => {
+          //parseInt dùng để đổi từ string sang int
+          if (parseInt(product.id) === temp1 || parseInt(product.id) === temp2 || parseInt(product.id) === temp3 || parseInt(product.id) === temp4 || parseInt(product.id) === temp5) {
+            return `
+                <div class="col l-2-4 m-4 c-6">
+                  <a href="./productInformation.html?${product.id}" class="home__product-item">
+                    <img src="${product.image}" alt='' class="home__product-item-img">
+                    <h3 class="home__product-item-tittle">${product.name}</h3>
+                    <h4 class="home__product-item-price">${product.price} ₫</h4>
+                    <div class="home__product-item-btn-wrap">
+                      <button class="home__product-item-btn btn btn--primary ">Xem chi tiết</button>
+                    </div>
+                  </a>
+                </div>
+                    `
+          }
+        })
+
+        b('.same_product').innerHTML = htmls.join('');
+      },
+
+      start: function () {
+        this.render();
+      }
+    }
+    app2.start();
+  </script>
+
+  <!-- render header -->
+  <script src="./header/header.js"></script>
+  <!-- render toast message  -->
+  <script src="./toast_messages/toast.js"></script>
+  <!-- render modal  -->
+  <script src="./modal/modal.js"></script>
+  <!-- Xử lý sự kiện click đăng ký/ Đăng nhập  -->
+  <script src="./javascript/logIn_and_Signup.js"></script>
+  <!-- import validator đăng ký, đăng nhập  -->
+  <script src="./javascript/validator.js"></script>
+  <!-- xử lý các rule, sự kiện đăng ký, đăng nhập, check đăng ký, đăng nhập thành công-->
+  <script>
+    const headerNavbarListTwo = document.querySelector('.header__navbar-list-two');
+    const headerMenu = document.querySelector('.header_menu');
+    var emailReg;
+    var passwordReg;
+    var emailLog;
+    var passwordLog;
+    // Đăng ký 
+    Validator({
+      form: "#form-1",
+      formGroupSelector: ".form-group",
+      errorSelector: ".form-message",
+      rules: [
+        // Validator.isRequired('#fullname'),
+        Validator.isRequired("#email"),
+        Validator.isEmail("#email"),
+        Validator.minLength("#password", 6),
+        Validator.isRequired("#password_confirmation"),
+        Validator.isConfirmed(
+          "#password_confirmation",
+          function () {
+            return document.querySelector("#form-1 #password").value;
+          },
+          "Mật khẩu nhập lại không khớp"
+        ),
+      ],
+      onSubmit: function (data) {
+        //Call api
+        console.log(data);
+        emailReg = data.email;
+        passwordReg = data.password;
+
+        showSuccessSignUpToast();
+        logModal.classList.add('open');
+        regModal.classList.remove('open');
+      },
+    });
+    //Đăng nhập
+    Validator({
+      form: "#form-2",
+      formGroupSelector: ".form-group",
+      errorSelector: ".form-message",
+      rules: [
+        Validator.isRequired("#email"),
+        Validator.isEmail("#email"),
+        Validator.minLength("#password", 6),
+      ],
+      onSubmit: function (data) {
+        //Call api
+        console.log(data);
+        emailLog = data.email;
+        passwordLog = data.password;
+
+        if (emailReg === emailLog && passwordReg === passwordLog) {
+          showSuccessLogInToast();
+          logModal.classList.remove('open');
+          location.replace('/login_index.html');
+        }
+        else {
+          showErrorLogInToast();
+        }
+      },
+    });
+  </script>
+  <!-- xử lý trượt slider  -->
+  <script src="./javascript/slider.js"></script>
+  <!-- Time sale countDown -->
+  <script src="./javascript/countDownTime.js"></script>
+  <!-- object product 1  -->
+  <script src="./javascript/mainProduct.js"></script>
+  <!-- Đóng mở chat hỗ trợ trực tuyến -->
+  <script>
+    function openChat() {
+      document.getElementById("myChat").style.display = "block";
+    }
+    function closeChat() {
+      document.getElementById("myChat").style.display = "none";
+    }
+  </script>
+  <!-- Đóng mở menu mobile -->
+  <script>
+    function openMenuMobile() {
+      document.getElementById("menu_mobile").style.display = "block";
+    }
+    function closeMenuMobile() {
+      document.getElementById("menu_mobile").style.display = "none";
+    }
+  </script>
+  <!-- render chatbox  -->
+  <script src="./chatbox/chatbox.js"></script>
+  <!-- render footer -->
+  <script src="./footer/footer.js"></script>
+</body>
+
+</html>

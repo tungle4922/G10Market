@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>G10 MARKET</title>
+  <link rel="icon" type="image/x-icon" href="./assests/img/icon_main.png" />
+  <!--reset css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link rel="stylesheet" href="./assests/css/grid.css" />
+  <link rel="stylesheet" href="./assests/css/base.css" />
+  <link rel="stylesheet" href="./assests/css/main.css" />
+  <link rel="stylesheet" href="./assests/css/responsive.css" />
+  <link rel="stylesheet" href="./modal/modal.css" />
+  <link rel="stylesheet" href="./header/header.css">
+  <link rel="stylesheet" href="./footer/footer.css">
+  <link rel="stylesheet" href="./chatbox/chatbox.css">
+  <link rel="stylesheet" href="./toast_messages/toast.css">
+  <link rel="stylesheet" href="./assests/responsive/header_responsive.css">
+  <link rel="stylesheet" href="./assests/responsive/modal_responsive.css">
+  <link rel="stylesheet" href="./assests/responsive/index_responsive.css">
+  <link rel="stylesheet" href="./assests/fonts/fontawesome-free-6.2.0-web/css/all.min.css" />
+  <!--Nhúng font-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400, 500, 700&display=swap&subset=vietnamese"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <div class="app">
+    <header class="header" id="header">
+      <!-- được render từ file header.js  -->
+    </header>
+
+    <div class="app_container">
+      <div class="grid wide">
+        <!-- category + slider  -->
+        <div class="row">
+          <div class="col l-3 m-3 c-12">
+            <nav class="category">
+              <div class="category__heading">
+                <h3 class="category__heading-tittle">DANH MỤC</h3>
+              </div>
+              <ul class="category__list">
+                <li class="category__list-tittle">
+                  <a href="./categoryProduct.html?raunhapkhau" class="category__list-tittle-link">Rau nhập khẩu</a>
+                </li>
+                <li class="category__list-tittle">
+                  <a href="./categoryProduct.html?hoaquatuoi" class="category__list-tittle-link"> Hoa quả tươi </a>
+                </li>
+                <li class="category__list-tittle">
+                  <a href="./categoryProduct.html?traicaynhapkhau" class="category__list-tittle-link"> Trái cây nhập
+                    khẩu</a>
+                </li>
+                <li class="category__list-tittle">
+                  <a href="./categoryProduct.html?namcacloai" class="category__list-tittle-link"> Nấm các loại</a>
+                </li>
+                <li class="category__list-tittle">
+                  <a href="./categoryProduct.html?hoaquadalat" class="category__list-tittle-link"> Hoa quả Đà Lạt</a>
+                </li>
+                <li class="category__list-tittle">
+                  <a href="./categoryProduct.html?rautuoisach" class="category__list-tittle-link"> Rau tươi sạch</a>
+                </li>
+                <li class="category__list-tittle">
+                  <a href="./categoryProduct.html?cacloaicuqua" class="category__list-tittle-link"> Các loại củ quả</a>
+                </li>
+                <li class="category__list-tittle">
+                  <a href="./categoryProduct.html?taocacloai" class="category__list-tittle-link"> Táo các loại </a>
+                </li>
+                <li class="category__list-tittle">
+                  <a href="./categoryProduct.html?hoaquasaykho" class="category__list-tittle-link"> Hoa quả sấy khô</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="col l-9 m-9 c-12">
+            <div class="slider">
+              <div class="slide_img-wrap">
+                <img src="./assests/img/slider_4.jpg" alt="" class="slider__img first" />
+                <img src="./assests/img/bannwe-web-20.10-2733.jpg" alt="" class="slider__img" />
+                <img src="./assests/img/slider_3.webp" alt="" class="slider__img" />
+                <img src="./assests/img/slider_5.png" alt="" class="slider__img" />
+              </div>
+
+              <div class="angle_right">
+                <i class="angle_right-icon fa-solid fa-angle-right"></i>
+              </div>
+              <div class="angle_left">
+                <i class="angle_left-icon fa-solid fa-angle-left"></i>
+              </div>
+
+              <div class="slider_circle">
+                <div id="circle1" class="slider_circle-icon active"></div>
+                <div id="circle2" class="slider_circle-icon"></div>
+                <div id="circle3" class="slider_circle-icon"></div>
+                <div id="circle4" class="slider_circle-icon"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- category mobile -->
+        <div class="menu_mobile" id="menu_mobile">
+          <div class="menu_close">
+            <i class="menu_close-icon fa-solid fa-xmark" onclick="closeMenuMobile()"></i>
+          </div>
+
+          <div class="header__search-mobile">
+            <div class="header__search-input-wrap">
+              <input type="text" class="header__search-input" placeholder="Tìm kiếm trên G10 Market">
+            </div>
+
+            <button class="header__search-btn">
+              <i class="header__search-btn-icon fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+
+          <nav class="category_mobile">
+            <div class="category__heading">
+              <h3 class="category__heading-tittle">DANH MỤC</h3>
+            </div>
+            <ul class="category__list">
+              <li class="category__list-tittle">
+                <a href="./categoryProduct.html?raunhapkhau" class="category__list-tittle-link">Rau nhập khẩu</a>
+              </li>
+              <li class="category__list-tittle">
+                <a href="./categoryProduct.html?hoaquatuoi" class="category__list-tittle-link"> Hoa quả tươi </a>
+              </li>
+              <li class="category__list-tittle">
+                <a href="./categoryProduct.html?traicaynhapkhau" class="category__list-tittle-link"> Trái cây nhập
+                  khẩu</a>
+              </li>
+              <li class="category__list-tittle">
+                <a href="./categoryProduct.html?namcacloai" class="category__list-tittle-link"> Nấm các loại</a>
+              </li>
+              <li class="category__list-tittle">
+                <a href="./categoryProduct.html?hoaquadalat" class="category__list-tittle-link"> Hoa quả Đà Lạt</a>
+              </li>
+              <li class="category__list-tittle">
+                <a href="./categoryProduct.html?rautuoisach" class="category__list-tittle-link"> Rau tươi sạch</a>
+              </li>
+              <li class="category__list-tittle">
+                <a href="./categoryProduct.html?cacloaicuqua" class="category__list-tittle-link"> Các loại củ quả</a>
+              </li>
+              <li class="category__list-tittle">
+                <a href="./categoryProduct.html?taocacloai" class="category__list-tittle-link"> Táo các loại </a>
+              </li>
+              <li class="category__list-tittle">
+                <a href="./categoryProduct.html?hoaquasaykho" class="category__list-tittle-link"> Hoa quả sấy khô</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <!-- banner  -->
+        <div class="row">
+          <div class="col l-12 m-12 c-12">
+            <img src="./assests/img/banner_1.png" alt="" class="banner__ads" />
+          </div>
+        </div>
+        <!-- product sale  -->
+        <div class="row">
+          <div class="col l-12 m-12 c-12">
+            <div class="product__sale-heading">
+              <div class="title_and_time-sale-box">
+                <h3 class="product__sale-tittle">
+                  SALE CUỐI NGÀY
+                  <i class="fa-solid fa-bolt" style="color: #ffdea3"></i>
+                </h3>
+                <div class="sale_time-box">
+                  <div class="sale_time-text-wrap">
+                    <p class="sale_time-text" id="sale_time-hour"></p>
+                  </div>
+                  <p style="color: white">:</p>
+                  <div class="sale_time-text-wrap">
+                    <p class="sale_time-text" id="sale_time-minute"></p>
+                  </div>
+                  <p style="color: white">:</p>
+                  <div class="sale_time-text-wrap">
+                    <p class="sale_time-text" id="sale_time-second"></p>
+                  </div>
+                </div>
+              </div>
+              <a href="" class="product__sale-view-all">Xem Tất Cả ></a>
+            </div>
+            <div class="product__sale" style="overflow-x: auto;">
+              <div class="col l-2-4 m-4 c-6">
+                <a href="./productInformation.html?51" class="home__product-sale">
+                  <div class="home__product-sale-box">
+                    <h3 class="home__product-sale-box-percent">50%</h3>
+                    <h3 class="home__product-sale-box-reduce">GIẢM</h3>
+                  </div>
+                  <img src="./assests/img/saleproducts/spd5.webp" alt="" class="home__product-sale-img" />
+                  <div class="sale__product-item-price">
+                    <h4 class="home__product-item-price-old">72.000₫</h4>
+                    <h4 class="home__product-item-price-new">36.000₫</h4>
+                  </div>
+
+                  <div class="sale__progress">
+                    <div class="sale__progress-inside"></div>
+                    <div class="sale__progress-tittle">Đang bán chạy</div>
+                  </div>
+                </a>
+              </div>
+              <div class="col l-2-4 m-4 c-6">
+                <a href="./productInformation.html?52" class="home__product-sale">
+                  <div class="home__product-sale-box">
+                    <h3 class="home__product-sale-box-percent">50%</h3>
+                    <h3 class="home__product-sale-box-reduce">GIẢM</h3>
+                  </div>
+                  <img src="./assests/img/saleproducts/spd1.webp" alt="" class="home__product-sale-img" />
+                  <div class="sale__product-item-price">
+                    <h4 class="home__product-item-price-old">172.000₫</h4>
+                    <h4 class="home__product-item-price-new">86.000₫</h4>
+                  </div>
+
+                  <div class="sale__progress">
+                    <div class="sale__progress-inside"></div>
+                    <div class="sale__progress-tittle">Đang bán chạy</div>
+                  </div>
+                </a>
+              </div>
+              <div class="col l-2-4 m-4 c-6">
+                <a href="./productInformation.html?53" class="home__product-sale">
+                  <div class="home__product-sale-box">
+                    <h3 class="home__product-sale-box-percent">40%</h3>
+                    <h3 class="home__product-sale-box-reduce">GIẢM</h3>
+                  </div>
+                  <img src="./assests/img/saleproducts/spd2.webp" alt="" class="home__product-sale-img" />
+                  <div class="sale__product-item-price">
+                    <h4 class="home__product-item-price-old">46.000₫</h4>
+                    <h4 class="home__product-item-price-new">28.000₫</h4>
+                  </div>
+
+                  <div class="sale__progress">
+                    <div class="sale__progress-inside"></div>
+                    <div class="sale__progress-tittle">Đang bán chạy</div>
+                  </div>
+                </a>
+              </div>
+              <div class="col l-2-4 m-4 c-6">
+                <a href="./productInformation.html?54" class="home__product-sale">
+                  <div class="home__product-sale-box">
+                    <h3 class="home__product-sale-box-percent">35%</h3>
+                    <h3 class="home__product-sale-box-reduce">GIẢM</h3>
+                  </div>
+                  <img src="./assests/img/saleproducts/spd3.webp" alt="" class="home__product-sale-img" />
+                  <div class="sale__product-item-price">
+                    <h4 class="home__product-item-price-old">89.000₫</h4>
+                    <h4 class="home__product-item-price-new">58.000₫</h4>
+                  </div>
+
+                  <div class="sale__progress">
+                    <div class="sale__progress-inside"></div>
+                    <div class="sale__progress-tittle">Đang bán chạy</div>
+                  </div>
+                </a>
+              </div>
+              <div class="col l-2-4 m-4 c-6">
+                <a href="./productInformation.html?55" class="home__product-sale">
+                  <div class="home__product-sale-box">
+                    <h3 class="home__product-sale-box-percent">20%</h3>
+                    <h3 class="home__product-sale-box-reduce">GIẢM</h3>
+                  </div>
+                  <img src="./assests/img/saleproducts/spd4.webp" alt="" class="home__product-sale-img" />
+                  <div class="sale__product-item-price">
+                    <h4 class="home__product-item-price-old">69.000₫</h4>
+                    <h4 class="home__product-item-price-new">55.000₫</h4>
+                  </div>
+
+                  <div class="sale__progress">
+                    <div class="sale__progress-inside"></div>
+                    <div class="sale__progress-tittle">Đang bán chạy</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- promo  -->
+        <div class="row">
+          <div class="col l-12 m-12 c-12">
+            <div class="product__header">
+              <h3 class="product__header-tittle">CHƯƠNG TRÌNH KHUYẾN MÃI</h3>
+            </div>
+          </div>
+          <div class="promotion">
+            <div class="col l-3 m-3 c-3">
+              <a href="" class="product__promotion">
+                <img src="./assests/img/promo_2.jpg" alt="" class="product__promotion-img" />
+              </a>
+            </div>
+            <div class="col l-3 m-3 c-3">
+              <a href="" class="product__promotion">
+                <img src="./assests/img/promo_2.jpg" alt="" class="product__promotion-img" />
+              </a>
+            </div>
+            <div class="col l-3 m-3 c-3">
+              <a href="" class="product__promotion">
+                <img src="./assests/img/promo_2.jpg" alt="" class="product__promotion-img" />
+              </a>
+            </div>
+            <div class="col l-3 m-3 c-3">
+              <a href="" class="product__promotion">
+                <img src="./assests/img/promo_2.jpg" alt="" class="product__promotion-img" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- product top search  -->
+        <div class="row">
+          <div class="col l-12 m-12 c-12">
+            <div class="product__sale-heading">
+              <h3 class="product__sale-tittle">TÌM KIẾM HÀNG ĐẦU</h3>
+              <a href="" class="product__sale-view-all">Xem Tất Cả ></a>
+            </div>
+            <div class="product__top-search" style="overflow-x: auto;">
+              <div class="col l-2-4 m-4 c-6">
+                <a href="./productInformation.html?56" class="product__top-search-item">
+                  <div class="product__top-search-board">
+                    <h3 class="product__top-search-board-tittle">HOT</h3>
+                  </div>
+                  <img src="./assests/img/Taodo-335x315.jpg" alt="" class="home__product-top-img" />
+                  <p class="product__top-search-item-tittle">
+                    Táo đỏ Mỹ nhập khẩu
+                  </p>
+                  <div class="product__top-search-item-rating">
+                    <!-- <i class="fire-icon fa-solid fa-fire"></i> -->
+                    <i class="rating-icon fa-solid fa-star"></i>
+                    <i class="rating-icon fa-solid fa-star"></i>
+                    <i class="rating-icon fa-solid fa-star"></i>
+                    <i class="rating-icon fa-solid fa-star"></i>
+                    <i class="rating-icon fa-solid fa-star"></i>
+                    <p class="product__top-search-item-sold">| Đã bán 245+</p>
+                  </div>
+                  <!-- <div class="sale__product-item-price">
+                                    <h4 class="home__product-item-price-old">600.000₫</h4>
+                                    <h4 class="home__product-item-price-new">200.000₫</h4>
+                                </div> -->
+                </a>
+              </div>
+              <div class="col l-2-4 m-4 c-6">
+                <a href="./productInformation.html?57" class="product__top-search-item">
+                  <div class="product__top-search-board">
+                    <h3 class="product__top-search-board-tittle">HOT</h3>
+                  </div>
+                  <img src="./assests/img/top_search/tpd1.webp" alt="" class="home__product-top-img" />
+                  <p class="product__top-search-item-tittle">
+                    Ổi Phúc Lộc Thọ
+                  </p>
+                  <div class="product__top-search-item-rating">
+                    <!-- <i class="fire-icon fa-solid fa-fire"></i> -->
+                    <i class="rating-icon fa-solid fa-star"></i>
+                    <i class="rating-icon fa-solid fa-star"></i>
+                    <i class="rating-icon fa-solid fa-star"></i>
+                    <i class="rating-icon fa-solid fa-star"></i>
+                    <i class="rating-icon fa-solid fa-star"></i>
+                    <p class="product__top-search-item-sold">| Đã bán 169+</p>
+                  </div>
+                  <!-- <div class="sale__product-item-price">
+                                    <h4 class="home__product-item-price-old">600.000₫</h4>
+                                    <h4 class="home__product-item-price-new">200.000₫</h4>
+                                </div> -->
+                </a>
+              </div>
+              <div class="col l-2-4 m-4 c-6">
+                <a href="./productInformation.html?58" class="product__top-search-item">
+                  <div class="product__top-search-board">
+                    <h3 class="product__top-search-board-tittle">HOT</h3>
+                  </div>
+                  <img src="./assests/img/top_search/tpd2.webp" alt="" class="home__product-top-img" />
+                  <p class="product__top-search-item-tittle">Cam Navel</p>
+                  <div class="product__top-search-item-rating">
+                    <!-- <i class="fire-icon fa-solid fa-fire"></i> -->
+                    <i class="rating-icon fa-solid fa-star"></i>
+                    <i class="rating-icon fa-solid fa-star"></i>
+                    <i class="rating-icon fa-solid fa-star"></i>
+                    <i class="rating-icon fa-solid fa-star"></i>
+                    <i class="rating-icon fa-solid fa-star"></i>
+                    <p class="product__top-search-item-sold">| Đã bán 135+</p>
+                  </div>
+                  <!-- <div class="sale__product-item-price">
+                                    <h4 class="home__product-item-price-old">600.000₫</h4>
+                                    <h4 class="home__product-item-price-new">200.000₫</h4>
+                                </div> -->
+                </a>
+              </div>
+              <div class="col l-2-4 m-4 c-6">
+                <a href="./productInformation.html?59" class="product__top-search-item">
+                  <div class="product__top-search-board">
+                    <h3 class="product__top-search-board-tittle">HOT</h3>
+                  </div>
+                  <img src="./assests/img/top_search/tpd3.webp" alt="" class="home__product-top-img" />
+                  <p class="product__top-search-item-tittle">
+                    Nho xanh không hạt
+                  </p>
+                  <div class="product__top-search-item-rating">
+                    <!-- <i class="fire-icon fa-solid fa-fire"></i> -->
+                    <i class="rating-icon fa-solid fa-star"></i>
+                    <i class="rating-icon fa-solid fa-star"></i>
+                    <i class="rating-icon fa-solid fa-star"></i>
+                    <i class="rating-icon fa-solid fa-star"></i>
+                    <i class="rating-icon fa-solid fa-star"></i>
+                    <p class="product__top-search-item-sold">| Đã bán 492+</p>
+                  </div>
+                  <!-- <div class="sale__product-item-price">
+                                    <h4 class="home__product-item-price-old">600.000₫</h4>
+                                    <h4 class="home__product-item-price-new">200.000₫</h4>
+                                </div> -->
+                </a>
+              </div>
+              <div class="col l-2-4 m-4 c-6">
+                <a href="./productInformation.html?60" class="product__top-search-item">
+                  <div class="product__top-search-board">
+                    <h3 class="product__top-search-board-tittle">HOT</h3>
+                  </div>
+                  <img src="./assests/img/top_search/tpd4.webp" alt="" class="home__product-top-img" />
+                  <p class="product__top-search-item-tittle">Dưa lưới</p>
+                  <div class="product__top-search-item-rating">
+                    <!-- <i class="fire-icon fa-solid fa-fire"></i> -->
+                    <i class="rating-icon fa-solid fa-star"></i>
+                    <i class="rating-icon fa-solid fa-star"></i>
+                    <i class="rating-icon fa-solid fa-star"></i>
+                    <i class="rating-icon fa-solid fa-star"></i>
+                    <i class="rating-icon fa-solid fa-star"></i>
+                    <p class="product__top-search-item-sold">| Đã bán 228+</p>
+                  </div>
+                  <!-- <div class="sale__product-item-price">
+                                    <h4 class="home__product-item-price-old">600.000₫</h4>
+                                    <h4 class="home__product-item-price-new">200.000₫</h4>
+                                </div> -->
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- slider2 -->
+        <div class="row">
+          <div class="col l-8 m-12 c-12">
+            <div class="product__sale-heading">
+              <h3 class="product__sale-tittle">
+                MÃ GIẢM GIÁ
+                <i class="fa-solid fa-bolt" style="color: #ffdea3"></i>
+              </h3>
+              <a href="./voucher.html" class="product__sale-view-all">Xem Tất Cả ></a>
+            </div>
+            <div class="coupon-box-wrap" style="overflow-x: auto;">
+              <div class="col l-4 m-6 c-12">
+                <div class="coupon_box">
+                  <img src="./assests/img/Freeship-100k.png" alt="" class="coupon_box-img" />
+                  <div class="coupon_box-content">
+                    <p class="coupon_box-content-tittle">Mã freeship 15k</p>
+                    <button class="coupon_btn">Lưu</button>
+                    <p class="coupon_box-content-time">Hsd: 31/12/2024</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col l-4 m-6 c-12">
+                <div class="coupon_box">
+                  <img src="./assests/img/Freeship-100k.png" alt="" class="coupon_box-img" />
+                  <div class="coupon_box-content">
+                    <p class="coupon_box-content-tittle">Mã freeship 20k</p>
+                    <button class="coupon_btn">Lưu</button>
+                    <p class="coupon_box-content-time">Hsd: 31/12/2024</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col l-4 m-6 c-12">
+                <div class="coupon_box">
+                  <img src="./assests/img/Freeship-100k.png" alt="" class="coupon_box-img" />
+                  <div class="coupon_box-content">
+                    <p class="coupon_box-content-tittle">Mã freeship 25k</p>
+                    <button class="coupon_btn">Lưu</button>
+                    <p class="coupon_box-content-time">Hsd: 31/12/2024</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="coupon-box-wrap" style="overflow-x: auto;">
+              <div class="col l-4 m-6 c-12">
+                <div class="coupon_box" style="margin-bottom: 16px">
+                  <img src="./assests/img/giam_5pc.webp" alt="" class="coupon_box-img" />
+                  <div class="coupon_box-content">
+                    <p class="coupon_box-content-tittle">Mã giảm 5%</p>
+                    <button class="coupon_btn">Lưu</button>
+                    <p class="coupon_box-content-time">Hsd: 12/12/2024</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col l-4 m-6 c-12">
+                <div class="coupon_box" style="margin-bottom: 16px">
+                  <img src="./assests/img/giam_10pc.webp" alt="" class="coupon_box-img" />
+                  <div class="coupon_box-content">
+                    <p class="coupon_box-content-tittle">Mã giảm 10%</p>
+                    <button class="coupon_btn">Lưu</button>
+                    <p class="coupon_box-content-time">Hsd: 12/12/2024</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col l-4 m-6 c-12">
+                <div class="coupon_box" style="margin-bottom: 16px">
+                  <img src="./assests/img/giam_20pc.webp" alt="" class="coupon_box-img" />
+                  <div class="coupon_box-content">
+                    <p class="coupon_box-content-tittle">Mã giảm 50%</p>
+                    <button class="coupon_btn">Lưu</button>
+                    <p class="coupon_box-content-time">Hsd: 12/12/2024</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col l-4 m-12 c-12">
+            <div class="slider2">
+              <div class="slider_img-wrap2">
+                <img src="./assests/img/slider2_1.jpg" alt="" class="slider__img2 first2" />
+                <img src="./assests/img/slider2_2.jfif" alt="" class="slider__img2" />
+                <img src="./assests/img/slide2_3.webp" alt="" class="slider__img2" />
+                <img src="./assests/img/promo_1.jpg" alt="" class="slider__img2" />
+              </div>
+
+              <div class="slider_circle2">
+                <div class="slider_circle-icon2 active"></div>
+                <div class="slider_circle-icon2"></div>
+                <div class="slider_circle-icon2"></div>
+                <div class="slider_circle-icon2"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- product 1  -->
+        <div class="row">
+          <div class="col l-12 m-12 c-12">
+            <div class="product__header">
+              <h3 class="product__header-tittle">GỢI Ý HÔM NAY</h3>
+            </div>
+          </div>
+        </div>
+        <div class="home__product-item-wrap row index_row">
+          <!-- được render từ file mainProduct.js  -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Ngăn cách content với footer -->
+    <div style="padding-bottom: 70px; background-color: #f5f5f5"></div>
+
+    <footer class="footer" id="footer">
+      <!-- được render từ file footer.js  -->
+    </footer>
+  </div>
+
+  <!-- modal  -->
+  <div id="modal_wrap">
+    <!-- render từ file modal.js  -->
+  </div>
+  <!-- chat message  -->
+  <div id="chat-box">
+    <!-- render từ file chatbox.js  -->
+  </div>
+  <!-- toast message  -->
+  <div id="toast">
+    <!-- render từ file toast.js  -->
+  </div>
+
+  <!-- render header -->
+  <script src="./header/header.js"></script>
+  <!-- render toast message  -->
+  <script src="./toast_messages/toast.js"></script>
+  <!-- render modal  -->
+  <script src="./modal/modal.js"></script>
+  <!-- Xử lý sự kiện click đăng ký/ Đăng nhập  -->
+  <script src="./javascript/logIn_and_Signup.js"></script>
+  <!-- import validator đăng ký, đăng nhập  -->
+  <script src="./javascript/validator.js"></script>
+  <!-- xử lý các rule, sự kiện đăng ký, đăng nhập, check đăng ký, đăng nhập thành công-->
+  <script>
+    const headerNavbarListTwo = document.querySelector('.header__navbar-list-two');
+    const headerMenu = document.querySelector('.header_menu');
+    var emailReg;
+    var passwordReg;
+    var emailLog;
+    var passwordLog;
+    // Đăng ký 
+    Validator({
+      form: "#form-1",
+      formGroupSelector: ".form-group",
+      errorSelector: ".form-message",
+      rules: [
+        // Validator.isRequired('#fullname'),
+        Validator.isRequired("#email"),
+        Validator.isEmail("#email"),
+        Validator.minLength("#password", 6),
+        Validator.isRequired("#password_confirmation"),
+        Validator.isConfirmed(
+          "#password_confirmation",
+          function () {
+            return document.querySelector("#form-1 #password").value;
+          },
+          "Mật khẩu nhập lại không khớp"
+        ),
+      ],
+      onSubmit: function (data) {
+        //Call api
+        console.log(data);
+        emailReg = data.email;
+        passwordReg = data.password;
+
+        showSuccessSignUpToast();
+        logModal.classList.add('open');
+        regModal.classList.remove('open');
+      },
+    });
+    //Đăng nhập
+    Validator({
+      form: "#form-2",
+      formGroupSelector: ".form-group",
+      errorSelector: ".form-message",
+      rules: [
+        Validator.isRequired("#email"),
+        Validator.isEmail("#email"),
+        Validator.minLength("#password", 6),
+      ],
+      onSubmit: function (data) {
+        //Call api
+        console.log(data);
+        emailLog = data.email;
+        passwordLog = data.password;
+
+        if (emailReg === emailLog && passwordReg === passwordLog) {
+          showSuccessLogInToast();
+          logModal.classList.remove('open');
+        }
+        else {
+          showErrorLogInToast();
+        }
+      },
+    });
+  </script>
+  <!-- xử lý trượt slider  -->
+  <script src="./javascript/slider.js"></script>
+  <!-- Time sale countDown -->
+  <script src="./javascript/countDownTime.js"></script>
+  <!-- object product 1  -->
+  <script src="./javascript/mainProduct.js"></script>
+  <!-- Đóng mở chat hỗ trợ trực tuyến -->
+  <script>
+    function openChat() {
+      document.getElementById("myChat").style.display = "block";
+    }
+    function closeChat() {
+      document.getElementById("myChat").style.display = "none";
+    }
+  </script>
+  <!-- Đóng mở menu mobile -->
+  <script>
+    function openMenuMobile() {
+      document.getElementById("menu_mobile").style.display = "block";
+    }
+    function closeMenuMobile() {
+      document.getElementById("menu_mobile").style.display = "none";
+    }
+  </script>
+  <!-- render chatbox  -->
+  <script src="./chatbox/chatbox.js"></script>
+  <!-- render footer -->
+  <script src="./footer/footer.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+.cart_img {
+    width: 200px;
+    height: 200px;
+}
+
+.cart_wrap {
+    background-color: var(--white-color);
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart_info {
+    text-align: center;
+}
+
+.cart_title {
+    font-size: 1.4rem;
+    padding-bottom: 5px;
+}
+
+.cart_link {
+    text-decoration: none;
+}
+
+.cart_btn {
+    font-size: 1.4rem;
+}
+
+.cart_btn:hover {
+    background-color: #8dbe4d;
+}
+
+.back_homepage-nav.cart_nav {
+    font-size: 2.3rem; 
+    margin: 0 0 26px -24px;
+}

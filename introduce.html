@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu về G10 Market</title>
+    <link rel="icon" type="image/x-icon" href="./assests/img/icon_main.png">
+    <!--reset css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assests/css/grid.css">
+    <link rel="stylesheet" href="./assests/css/base.css">
+    <link rel="stylesheet" href="./assests/css/main.css">
+    <link rel="stylesheet" href="./assests/css/responsive.css">
+    <link rel="stylesheet" href="./header/header.css">
+    <link rel="stylesheet" href="./footer/footer.css">
+    <link rel="stylesheet" href="./modal/modal.css" />
+    <link rel="stylesheet" href="./assests/fonts/fontawesome-free-6.2.0-web/css/all.min.css">
+    <link rel="stylesheet" href="./introduce_page/introduce.css">
+    <link rel="stylesheet" href="./chatbox/chatbox.css">
+    <link rel="stylesheet" href="./assests/responsive/header_responsive.css">
+    <link rel="stylesheet" href="./assests/responsive/modal_responsive.css">
+    <link rel="stylesheet" href="./assests/responsive/index_responsive.css">
+    <link rel="stylesheet" href="./assests/responsive/introduce_responsive.css">
+    <!--Nhúng font-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400, 500, 700&display=swap&subset=vietnamese"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="app">
+        <header class="header" id="header">
+            <!-- được render từ file header.js  -->
+        </header>
+
+        <!-- category mobile -->
+        <div class="menu_mobile" id="menu_mobile">
+            <div class="menu_close">
+                <i class="menu_close-icon fa-solid fa-xmark" onclick="closeMenuMobile()"></i>
+            </div>
+
+            <div class="header__search-mobile">
+                <div class="header__search-input-wrap">
+                    <input type="text" class="header__search-input" placeholder="Tìm kiếm trên G10 Market">
+                </div>
+
+                <button class="header__search-btn">
+                    <i class="header__search-btn-icon fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+
+            <nav class="category_mobile">
+                <div class="category__heading">
+                    <h3 class="category__heading-tittle">DANH MỤC</h3>
+                </div>
+                <ul class="category__list">
+                    <li class="category__list-tittle">
+                        <a href="./categoryProduct.html?raunhapkhau" class="category__list-tittle-link">Rau nhập
+                            khẩu</a>
+                    </li>
+                    <li class="category__list-tittle">
+                        <a href="./categoryProduct.html?hoaquatuoi" class="category__list-tittle-link"> Hoa quả tươi
+                        </a>
+                    </li>
+                    <li class="category__list-tittle">
+                        <a href="./categoryProduct.html?traicaynhapkhau" class="category__list-tittle-link"> Trái cây
+                            nhập
+                            khẩu</a>
+                    </li>
+                    <li class="category__list-tittle">
+                        <a href="./categoryProduct.html?namcacloai" class="category__list-tittle-link"> Nấm các loại</a>
+                    </li>
+                    <li class="category__list-tittle">
+                        <a href="./categoryProduct.html?hoaquadalat" class="category__list-tittle-link"> Hoa quả Đà
+                            Lạt</a>
+                    </li>
+                    <li class="category__list-tittle">
+                        <a href="./categoryProduct.html?rautuoisach" class="category__list-tittle-link"> Rau tươi
+                            sạch</a>
+                    </li>
+                    <li class="category__list-tittle">
+                        <a href="./categoryProduct.html?cacloaicuqua" class="category__list-tittle-link"> Các loại củ
+                            quả</a>
+                    </li>
+                    <li class="category__list-tittle">
+                        <a href="./categoryProduct.html?taocacloai" class="category__list-tittle-link"> Táo các loại
+                        </a>
+                    </li>
+                    <li class="category__list-tittle">
+                        <a href="./categoryProduct.html?hoaquasaykho" class="category__list-tittle-link"> Hoa quả sấy
+                            khô</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="introduce_container">
+            <img src="./assests/img/introduce_bg1.jpg" alt="" class="intro_bg">
+            <div class="grid wide">
+                <div class="introduce_content intro_row">
+                    <h3 class="intro_tittle1">G10 Market là nền tảng thương mại điện tử cung cấp thực phẩm sạch hàng đầu
+                        tại Đông Nam Á và Việt Nam.</h3>
+                    <p class="intro_tittle2">Ra mắt năm 2022, nền tảng thương mại G10 Market được xây dựng nhằm cung cấp
+                        cho người dùng những trải nghiệm dễ dàng, an toàn và nhanh chóng khi mua sắm trực tuyến thông
+                        qua hệ thống hỗ trợ thanh toán và vận hành vững mạnh. Chúng tôi có niềm tin mạnh mẽ rằng trải
+                        nghiệm mua sắm trực tuyến phải đơn giản, dễ dàng và mang đến cảm xúc vui thích. Niềm tin này
+                        truyền cảm hứng và thúc đẩy chúng tôi mỗi ngày tại G10 Market.</p>
+                    <button class="discover_hompage btn btn--primary">
+                        <a href="./index.html" class="discover_hompage-link">Khám phá G10 Market</a>
+                    </button>
+                </div>
+
+                <div class="row intro_row">
+                    <div class="col l-6">
+                        <div class="intro_textbox">
+                            <h3 class="intro_textbox-tittle">Mục tiêu của chúng tôi</h3>
+                            <p class="intro_textbox-content">Chúng tôi tin tưởng vào sức mạnh khai triển của công nghệ
+                                và mong muốn góp phần làm cho thế giới trở nên tốt đẹp hơn bằng việc kết nối cộng đồng
+                                người mua và người bán thông qua việc cung cấp một nền tảng thương mại điện tử.</p>
+                        </div>
+                    </div>
+                    <div class="col l-6">
+                        <div class="intro_textbox">
+                            <h3 class="intro_textbox-tittle">Định vị của chúng tôi</h3>
+                            <p class="intro_textbox-content">Đối với người dùng trên toàn khu vực, G10 Market mang đến
+                                trải nghiệm mua sắm trực tuyến tích hợp với vô số sản phẩm đa dạng chủng loại với giả cả
+                                hợp lý nhất, cộng đồng người dùng năng động và chuỗi dịch vụ liền mạch.</p>
+                        </div>
+                    </div>
+                    <div class="col l-12">
+                        <div class="intro_textbox-full">
+                            <h3 class="intro_textbox-tittle">Đặc điểm về con người của chúng tôi</h3>
+                            <p class="intro_textbox-content">Chúng tôi có niềm tin vào tính gần gũi mà thanh liêm, nền
+                                tảng vững chắc cho một cuộc sống trung thực, bình dân và thành thật với bản thân. Chúng
+                                tôi dễ gần, đáng yêu và tràn đầy năng lượng, luôn mang đến niềm vui cho những người xung
+                                quanh. Chúng tôi thích tận hưởng thời gian bên nhau giống như tận hưởng việc mua sắm
+                                trực tuyến với người thân và bạn bè - làm những việc yêu thích cùng nhau như một đại gia
+                                đình lớn.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="./assests/img/intro_bg.jpg" alt="" class="intro_bg-bottom">
+
+            <h3 class="tittle_partner">Thành viên đội ngũ kỹ thuật</h3>
+            <div class="grid wide">
+                <div class="row intro_row">
+                    <div class="col l-2-4 m-4 c-12" style="display: flex; justify-content: center;">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="./assests/img/avatar3.png" alt="Avatar" class="flip-card-img">
+                                </div>
+                                <div class="flip-card-back">
+                                    <h1 style="margin-top: 46px;">L. V Tùng</h1>
+                                    <p>Architect & Engineer</p>
+                                    <p>Msv: B20DCPT184</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-4 c-12" style="display: flex; justify-content: center;">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="./assests/img/avatar3.png" alt="Avatar" class="flip-card-img">
+                                </div>
+                                <div class="flip-card-back">
+                                    <h1 style="margin-top: 46px;">P. N Văn</h1>
+                                    <p>Architect & Engineer</p>
+                                    <p>Msv: B20DCPT224</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-4 c-12" style="display: flex; justify-content: center;">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="./assests/img/avatar3.png" alt="Avatar" class="flip-card-img">
+                                </div>
+                                <div class="flip-card-back">
+                                    <h1 style="margin-top: 46px;">P. V Sáng</h1>
+                                    <p>Architect & Engineer</p>
+                                    <p>Msv: B20DCPT168</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-4 c-12" style="display: flex; justify-content: center;">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="./assests/img/avatar3.png" alt="Avatar" class="flip-card-img">
+                                </div>
+                                <div class="flip-card-back">
+                                    <h1 style="margin-top: 46px;">P. H Tuân</h1>
+                                    <p>Architect & Engineer</p>
+                                    <p>Msv: B20DCPT180</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-4 c-12" style="display: flex; justify-content: center;">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="./assests/img/img_avatar2.png" alt="Avatar" class="flip-card-img">
+                                </div>
+                                <div class="flip-card-back">
+                                    <h1 style="margin-top: 46px;">N. T. T My</h1>
+                                    <p>Architect & Engineer</p>
+                                    <p>Msv: B20DCPT133</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <h3 class="tittle_partner">Đối tác của chúng tôi</h3>
+            <div class="grid wide">
+                <div class="row intro_row">
+                    <div class="col l-2-4 m-4 c-6">
+                        <div class="intro_logo-wrap">
+                            <img src="./assests/img/MoMo_Logo.png" alt="" class="intro_logo-partner">
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-4 c-6">
+                        <div class="intro_logo-wrap">
+                            <img src="./assests/img/moca.jpg" alt="" class="intro_logo-partner">
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-4 c-6">
+                        <div class="intro_logo-wrap">
+                            <img src="./assests/img/zalopay.png" alt="" class="intro_logo-partner">
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-4 c-6">
+                        <div class="intro_logo-wrap">
+                            <img src="./assests/img/vnpay.jpg" alt="" class="intro_logo-partner">
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-4 c-6">
+                        <div class="intro_logo-wrap">
+                            <img src="./assests/img/viettelpay-1.jpg" alt="" class="intro_logo-partner">
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-4 c-6">
+                        <div class="intro_logo-wrap">
+                            <img src="./assests/img/ghtk.png" alt="" class="intro_logo-partner">
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-4 c-6">
+                        <div class="intro_logo-wrap">
+                            <img src="./assests/img/ghn.png" alt="" class="intro_logo-partner">
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-4 c-6">
+                        <div class="intro_logo-wrap">
+                            <img src="./assests/img/j&t.png" alt="" class="intro_logo-partner">
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-4 c-6">
+                        <div class="intro_logo-wrap">
+                            <img src="./assests/img/best_express.png" alt="" class="intro_logo-partner">
+                        </div>
+                    </div>
+                    <div class="col l-2-4 m-4 c-6">
+                        <div class="intro_logo-wrap">
+                            <img src="./assests/img/ninja_van.png" alt="" class="intro_logo-partner">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer" id="footer">
+            <!-- được render từ file footer.js  -->
+        </footer>
+    </div>
+
+    <!-- modal  -->
+    <div id="modal_wrap">
+        <!-- render từ file modal.js  -->
+    </div>
+    <!-- chat message  -->
+    <div id="chat-box">
+        <!-- render từ file chatbox.js  -->
+    </div>
+
+    <!-- render header -->
+    <script src="./header/header.js"></script>
+    <!-- render toast message  -->
+    <script src="./toast_messages/toast.js"></script>
+    <!-- render modal  -->
+    <script src="./modal/modal.js"></script>
+    <!-- Xử lý sự kiện click đăng ký/ Đăng nhập  -->
+    <script src="./javascript/logIn_and_Signup.js"></script>
+    <!-- import validator đăng ký, đăng nhập  -->
+    <script src="./javascript/validator.js"></script>
+    <!-- xử lý các rule, sự kiện đăng ký, đăng nhập, check đăng ký, đăng nhập thành công-->
+    <script>
+        const headerNavbarListTwo = document.querySelector('.header__navbar-list-two');
+        const headerMenu = document.querySelector('.header_menu');
+        var emailReg;
+        var passwordReg;
+        var emailLog;
+        var passwordLog;
+        // Đăng ký 
+        Validator({
+            form: "#form-1",
+            formGroupSelector: ".form-group",
+            errorSelector: ".form-message",
+            rules: [
+                // Validator.isRequired('#fullname'),
+                Validator.isRequired("#email"),
+                Validator.isEmail("#email"),
+                Validator.minLength("#password", 6),
+                Validator.isRequired("#password_confirmation"),
+                Validator.isConfirmed(
+                    "#password_confirmation",
+                    function () {
+                        return document.querySelector("#form-1 #password").value;
+                    },
+                    "Mật khẩu nhập lại không khớp"
+                ),
+            ],
+            onSubmit: function (data) {
+                //Call api
+                console.log(data);
+                emailReg = data.email;
+                passwordReg = data.password;
+
+                showSuccessSignUpToast();
+                logModal.classList.add('open');
+                regModal.classList.remove('open');
+            },
+        });
+        //Đăng nhập
+        Validator({
+            form: "#form-2",
+            formGroupSelector: ".form-group",
+            errorSelector: ".form-message",
+            rules: [
+                Validator.isRequired("#email"),
+                Validator.isEmail("#email"),
+                Validator.minLength("#password", 6),
+            ],
+            onSubmit: function (data) {
+                //Call api
+                console.log(data);
+                emailLog = data.email;
+                passwordLog = data.password;
+
+                if (emailReg === emailLog && passwordReg === passwordLog) {
+                    showSuccessLogInToast();
+                    logModal.classList.remove('open');
+                    location.replace('/login_index.html');
+                }
+                else {
+                    showErrorLogInToast();
+                }
+            },
+        });
+    </script>
+    <!-- xử lý trượt slider  -->
+    <script src="./javascript/slider.js"></script>
+    <!-- Time sale countDown -->
+    <script src="./javascript/countDownTime.js"></script>
+    <!-- object product 1  -->
+    <script src="./javascript/mainProduct.js"></script>
+    <!-- Đóng mở chat hỗ trợ trực tuyến -->
+    <script>
+        function openChat() {
+            document.getElementById("myChat").style.display = "block";
+        }
+        function closeChat() {
+            document.getElementById("myChat").style.display = "none";
+        }
+    </script>
+    <!-- Đóng mở menu mobile -->
+    <script>
+        function openMenuMobile() {
+            document.getElementById("menu_mobile").style.display = "block";
+        }
+        function closeMenuMobile() {
+            document.getElementById("menu_mobile").style.display = "none";
+        }
+    </script>
+    <!-- render chatbox  -->
+    <script src="./chatbox/chatbox.js"></script>
+    <!-- render footer -->
+    <script src="./footer/footer.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>G10 MARKET</title>
+    <link rel="icon" type="image/x-icon" href="./assests/img/icon_main.png" />
+    <!--reset css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link rel="stylesheet" href="./assests/css/grid.css" />
+    <link rel="stylesheet" href="./assests/css/base.css" />
+    <link rel="stylesheet" href="./assests/css/main.css" />
+    <link rel="stylesheet" href="./assests/css/responsive.css" />
+    <link rel="stylesheet" href="./modal/modal.css" />
+    <link rel="stylesheet" href="./header/header.css">
+    <link rel="stylesheet" href="./footer/footer.css">
+    <link rel="stylesheet" href="./chatbox/chatbox.css">
+    <link rel="stylesheet" href="./toast_messages/toast.css">
+    <link rel="stylesheet" href="./contact_page/contact.css">
+    <link rel="stylesheet" href="./assests/css/policy.css">
+    <link rel="stylesheet" href="./assests/css/paymentPolicy.css">
+    <link rel="stylesheet" href="./assests/responsive/header_responsive.css">
+    <link rel="stylesheet" href="./assests/responsive/modal_responsive.css">
+    <link rel="stylesheet" href="./assests/responsive/index_responsive.css">
+    <link rel="stylesheet" href="./assests/responsive/paymentPolicy_responsive.css">
+    <link rel="stylesheet" href="./assests/fonts/fontawesome-free-6.2.0-web/css/all.min.css" />
+    <!--Nhúng font-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400, 500, 700&display=swap&subset=vietnamese"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <div class="app">
+        <header class="header" id="header">
+            <!-- được render từ file header.js  -->
+        </header>
+
+        <!-- category mobile -->
+        <div class="menu_mobile" id="menu_mobile">
+            <div class="menu_close">
+                <i class="menu_close-icon fa-solid fa-xmark" onclick="closeMenuMobile()"></i>
+            </div>
+
+            <div class="header__search-mobile">
+                <div class="header__search-input-wrap">
+                    <input type="text" class="header__search-input" placeholder="Tìm kiếm trên G10 Market">
+                </div>
+
+                <button class="header__search-btn">
+                    <i class="header__search-btn-icon fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+
+            <nav class="category_mobile">
+                <div class="category__heading">
+                    <h3 class="category__heading-tittle">DANH MỤC</h3>
+                </div>
+                <ul class="category__list">
+                    <li class="category__list-tittle">
+                        <a href="./categoryProduct.html?raunhapkhau" class="category__list-tittle-link">Rau nhập
+                            khẩu</a>
+                    </li>
+                    <li class="category__list-tittle">
+                        <a href="./categoryProduct.html?hoaquatuoi" class="category__list-tittle-link"> Hoa quả tươi
+                        </a>
+                    </li>
+                    <li class="category__list-tittle">
+                        <a href="./categoryProduct.html?traicaynhapkhau" class="category__list-tittle-link"> Trái cây
+                            nhập
+                            khẩu</a>
+                    </li>
+                    <li class="category__list-tittle">
+                        <a href="./categoryProduct.html?namcacloai" class="category__list-tittle-link"> Nấm các loại</a>
+                    </li>
+                    <li class="category__list-tittle">
+                        <a href="./categoryProduct.html?hoaquadalat" class="category__list-tittle-link"> Hoa quả Đà
+                            Lạt</a>
+                    </li>
+                    <li class="category__list-tittle">
+                        <a href="./categoryProduct.html?rautuoisach" class="category__list-tittle-link"> Rau tươi
+                            sạch</a>
+                    </li>
+                    <li class="category__list-tittle">
+                        <a href="./categoryProduct.html?cacloaicuqua" class="category__list-tittle-link"> Các loại củ
+                            quả</a>
+                    </li>
+                    <li class="category__list-tittle">
+                        <a href="./categoryProduct.html?taocacloai" class="category__list-tittle-link"> Táo các loại
+                        </a>
+                    </li>
+                    <li class="category__list-tittle">
+                        <a href="./categoryProduct.html?hoaquasaykho" class="category__list-tittle-link"> Hoa quả sấy
+                            khô</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="app_container" style="background-color: #fff;">
+            <!-- Ngăn cách với header  -->
+            <div style="padding-top: 15px; background-color: #fff"></div>
+            <div class="grid wide">
+                <div class="col l-12 m-12 c-12">
+                    <div class="contact_nav">
+                        <a href="./index.html" class="back_homepage-nav paymentPolicy_nav">Trang chủ</a>
+                        <h3 class="contact_seperate" style="font-size: 2.2rem; margin: 0 8px 26px 8px;">/</h3>
+                        <a href="" class="contact_page-nav" style="font-size: 2.2rem; margin: 0 0 26px 0;">Chính sách
+                            thanh toán</a>
+                    </div>
+                </div>
+                <div class="row paymentPolicy_row">
+                    <div class="col l-12 m-12 c-12">
+                        <h1 class="payment_title">Chính sách thanh toán</h1>
+                        <h3 class="payment_title1">1. Các hình thức thanh toán</h3>
+                        <p class="payment_content">
+                            Khách hàng có thể lựa chọn các hình thức thanh toán sau để thanh toán cho đơn hàng của mình
+                            khi
+                            mua sản phẩm trên website G10 market <br>
+                            1.1. Thanh toán trả trước: là hình thức thanh toán trực tuyến mà khách hàng sử dụng để thanh
+                            toán cho đơn hàng, bao gồm: <br>
+                            • Thẻ ATM (Thẻ ghi nợ/thanh toán/trả trước nội địa); <br>
+                            • Thẻ thanh toán quốc tế, thẻ tín dụng. <br>
+                            1.2. Thanh toán trả sau: là hình thức mà khách hàng sử dụng để thanh toán cho đơn hàng khi
+                            G10
+                            Market giao hàng, bao gồm: <br>
+                            • Tiền mặt <br>
+                            • Thẻ ATM (thẻ ngân hàng, thẻ thanh toán nội địa), thẻ tín dụng và thẻ thanh toán quốc tế
+                            (Visa,
+                            Master, JCB, UnionPay…) qua máy quẹt thẻ (POS, mPOS) của Ngân hàng <br>
+                        </p>
+                        <h3 class="payment_title1">2. Hướng dẫn thanh toán</h3>
+                        <p class="payment_content">
+                            Bước 1: Chọn sản phẩm muốn mua => Click vào biểu tượng giỏ hàng hoặc “MUA NGAY”. <br> <br>
+
+                            Bước 2: Sau khi chọn xong sản phẩm, click biểu tượng giỏ hàng trên header để thanh toán.
+                            Khách hàng kiểm tra các mặt hàng, số lượng => Click “GỬI ĐƠN HÀNG” để tiếp tục. <br> <br>
+
+                            Bước 3: Điền các thông tin cần thiết vào phiếu đặt hàng <br>
+
+                            Tại đây, quý khách điền các thông tin và chọn hình thức thanh toán: <br>
+                            • Thanh toán bằng tiền mặt khi nhận hàng (COD): Nhận hàng và thanh toán trực tiếp với nhân
+                            viên giao hàng. <br>
+                            • Thanh toán chuyển khoản: quý khách vui lòng chuyển khoản qua cây ATM hoặc chuyển khoản
+                            liên ngân hàng . <br> <br>
+                            Bước 4: Xác nhận thông tin<br>
+                            Sau khi điền đầy đủ thông tin, quý khách qua bước kiểm tra lại thông tin giao hàng, hình
+                            thức thanh toán và đơn hàng 1 lần nữa => Click “THANH TOÁN” hoặc "GỬI ĐƠN HÀNG"<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ngăn cách content với footer -->
+        <div style="padding-bottom: 70px; background-color: #fff"></div>
+
+        <footer class="footer" id="footer">
+            <!-- được render từ file footer.js  -->
+        </footer>
+    </div>
+
+    <!-- modal  -->
+    <div id="modal_wrap">
+        <!-- render từ file modal.js  -->
+    </div>
+    <!-- chat message  -->
+    <div id="chat-box">
+        <!-- render từ file chatbox.js  -->
+    </div>
+    <!-- toast message  -->
+    <div id="toast">
+        <!-- render từ file toast.js  -->
+    </div>
+
+    <!-- render header -->
+    <script src="./header/header.js"></script>
+    <!-- render toast message  -->
+    <script src="./toast_messages/toast.js"></script>
+    <!-- render modal  -->
+    <script src="./modal/modal.js"></script>
+    <!-- Xử lý sự kiện click đăng ký/ Đăng nhập  -->
+    <script src="./javascript/logIn_and_Signup.js"></script>
+    <!-- import validator đăng ký, đăng nhập  -->
+    <script src="./javascript/validator.js"></script>
+    <!-- xử lý các rule, sự kiện đăng ký, đăng nhập, check đăng ký, đăng nhập thành công-->
+    <script>
+        const headerNavbarListTwo = document.querySelector('.header__navbar-list-two');
+        const headerMenu = document.querySelector('.header_menu');
+        var emailReg;
+        var passwordReg;
+        var emailLog;
+        var passwordLog;
+        // Đăng ký 
+        Validator({
+            form: "#form-1",
+            formGroupSelector: ".form-group",
+            errorSelector: ".form-message",
+            rules: [
+                // Validator.isRequired('#fullname'),
+                Validator.isRequired("#email"),
+                Validator.isEmail("#email"),
+                Validator.minLength("#password", 6),
+                Validator.isRequired("#password_confirmation"),
+                Validator.isConfirmed(
+                    "#password_confirmation",
+                    function () {
+                        return document.querySelector("#form-1 #password").value;
+                    },
+                    "Mật khẩu nhập lại không khớp"
+                ),
+            ],
+            onSubmit: function (data) {
+                //Call api
+                console.log(data);
+                emailReg = data.email;
+                passwordReg = data.password;
+
+                showSuccessSignUpToast();
+                logModal.classList.add('open');
+                regModal.classList.remove('open');
+            },
+        });
+        //Đăng nhập
+        Validator({
+            form: "#form-2",
+            formGroupSelector: ".form-group",
+            errorSelector: ".form-message",
+            rules: [
+                Validator.isRequired("#email"),
+                Validator.isEmail("#email"),
+                Validator.minLength("#password", 6),
+            ],
+            onSubmit: function (data) {
+                //Call api
+                console.log(data);
+                emailLog = data.email;
+                passwordLog = data.password;
+
+                if (emailReg === emailLog && passwordReg === passwordLog) {
+                    showSuccessLogInToast();
+                    logModal.classList.remove('open');
+                    // location.replace('/login_index.html');
+                    // headerNavbarListTwo.remove();
+                }
+                else {
+                    showErrorLogInToast();
+                }
+            },
+        });
+    </script>
+    <!-- xử lý trượt slider  -->
+    <script src="./javascript/slider.js"></script>
+    <!-- Time sale countDown -->
+    <script src="./javascript/countDownTime.js"></script>
+    <!-- object product 1  -->
+    <script src="./javascript/mainProduct.js"></script>
+    <!-- Đóng mở chat hỗ trợ trực tuyến -->
+    <script>
+        function openChat() {
+            document.getElementById("myChat").style.display = "block";
+        }
+        function closeChat() {
+            document.getElementById("myChat").style.display = "none";
+        }
+    </script>
+    <!-- Đóng mở menu mobile -->
+    <script>
+        function openMenuMobile() {
+            document.getElementById("menu_mobile").style.display = "block";
+        }
+        function closeMenuMobile() {
+            document.getElementById("menu_mobile").style.display = "none";
+        }
+    </script>
+    <!-- render chatbox  -->
+    <script src="./chatbox/chatbox.js"></script>
+    <!-- render footer -->
+    <script src="./footer/footer.js"></script>
+    <!-- xử lý click đóng mở policy  -->
+    <script>
+        function togglePolicy() {
+            document.getElementById('policy_list').classList.toggle("show");
+            document.getElementById('policy_up').classList.toggle("show");
+            document.getElementById('policy_down').classList.toggle("hide");
+        }
+        function togglePolicy1() {
+            document.getElementById('policy_list1').classList.toggle("show");
+            document.getElementById('policy_up1').classList.toggle("show");
+            document.getElementById('policy_down1').classList.toggle("hide");
+        }
+        function togglePolicy2() {
+            document.getElementById('policy_list2').classList.toggle("show");
+            document.getElementById('policy_up2').classList.toggle("show");
+            document.getElementById('policy_down2').classList.toggle("hide");
+        }
+        function togglePolicy3() {
+            document.getElementById('policy_list3').classList.toggle("show");
+            document.getElementById('policy_up3').classList.toggle("show");
+            document.getElementById('policy_down3').classList.toggle("hide");
+        }
+    </script>
+</body>
+
+</html>

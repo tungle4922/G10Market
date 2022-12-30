@@ -1,0 +1,125 @@
+/* Mobile & tablet */
+@media (max-width: 1023px) {
+    
+}
+
+/* Tablet  */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .header__logo-img {
+        width: 174px;
+        height: 51px;
+    }
+
+    .header__search {
+        display: flex;
+        position: relative;
+        width: 330px;
+        height: 37px;
+        background-color: var(--white-color);
+        position: absolute;
+        left: 205px;
+        top: 18px;
+        border-radius: 3px;
+    }
+
+    .header__cart {
+        position: absolute;
+        right: 33px;
+        top: 25px;
+        cursor: pointer;
+    }
+}
+
+/* Mobile  */
+@media (max-width: 739px) {
+    .hide-on-mobile {
+        display: none;
+    }
+
+    :root {
+        --header-height: 105px;
+    }
+
+    .header__search {
+        display: none;
+    }
+
+    .header__navbar-item {
+        display: none;
+    }
+
+    .header__navbar-phone {
+        display: none;
+    }
+
+    /* .header__suport {
+        margin-right: 94px;
+    }
+
+    .header__signin {
+        margin-right: 6px;
+    }
+
+    .header__logo-img {
+        width: 202px;
+        height: 51px;
+        position: absolute;
+        left: 76px;
+        top: 2px;
+    }
+
+    .header__cart {
+        position: absolute;
+        right: 17px;
+        top: 25px;
+        cursor: pointer;
+    } */
+
+    .header__navbar {
+        justify-content: space-between;
+    }
+
+    .header__logo-img {
+        width: 198px;
+        height: 48px;
+    }
+
+    .header__body {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-bars {
+        display: block;
+        margin-left: 18px;
+        cursor: pointer;
+    }
+
+    .header__logo {
+        position: static;
+    }
+
+    .header__cart {
+        position: static;
+        margin-right: 15px;
+    }
+
+    .header__suport {
+        /* display: none; */
+        margin-right: 69px;
+    }
+
+    .header__signin {
+        margin-right: 25px;
+    }
+
+    .header__cart-list {
+        /* display: block; */
+        width: 304px;
+        height: 206px;
+        position: absolute;
+        top: 53px;
+        right: 6px;
+        display: none;
+    }
+}

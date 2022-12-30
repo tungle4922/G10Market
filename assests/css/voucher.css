@@ -1,0 +1,23 @@
+.app_container.voucher {
+    background-color: #26AA99;
+}
+
+.freeship_img {
+    width: 100%;
+}
+
+.voucher-img {
+    width: 60%;
+}
+
+.coupon_box.voucher {
+    border-left: 8px dotted #26AA99;
+}
+
+.product__sale.voucher {
+    background-color: #26AA99;
+}
+
+.home__product-sale.voucher {
+    border-radius: 6px;
+}
