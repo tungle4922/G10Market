@@ -1,3 +1,10 @@
+/* categoryPr  */
+.categoryPr {
+    background-color: var(--white-color);
+    margin-top: 40px;
+    border-radius: 6px;
+}
+
 /* category color  */
 .mobile_filter-wrap {
     display: flex;

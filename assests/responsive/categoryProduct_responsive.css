@@ -24,11 +24,11 @@
         margin-top: 9px;
     }
 
-    .category.tier1 {
+    .categoryPr.tier1 {
         margin-top: 0;
     }
 
-    .category.tier3 {
+    .categoryPr.tier3 {
         margin-bottom: 20px;
     }
 }
@@ -60,5 +60,19 @@
 
     .category_brand {
         margin-left: 12px !important;
+    }
+
+    /* menu mobile  */
+    .category__list.mobile {
+        display: block;
+        overflow: unset;
+    }
+
+    .category__list-tittle.mobile {
+        padding: 15.5px 0 6px 33px !important;
+    }
+
+    .category__list-tittle-link.mobile {
+        width: unset;
     }
 }
