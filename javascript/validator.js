@@ -134,10 +134,6 @@ function Validator(options) {
     }
 }
 
-//Định nghĩa Rules
-// Nguyên tắc của các rules:
-//1. Khi có lỗi => trả message lỗi
-//2. Khi hợp lệ => Không trả ra cái gì cả (undefined) (dùng .trim() để không tính dấu cách)
 
 // kiểm tra lỗi khi nhập tên
 Validator.isRequired = function(selector) {
